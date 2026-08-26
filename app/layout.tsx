@@ -2,8 +2,24 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://freizeitstaette-luebars.erich-brandlgmail-com.chatgpt.site'),
   title: 'Freizeitstätte Lübars | Gemeinsam aktiv ab 55',
   description: 'Die Freizeitstätte Lübars ist der Treffpunkt für alle ab 55: mit Sport, Computergruppen, Kreativangeboten, Ausflügen und Clubabenden.',
+  openGraph: {
+    title: 'Freizeitstätte Lübars | Gemeinsam aktiv ab 55',
+    description: 'Der Treffpunkt für alle ab 55 in Berlin-Lübars – aktiv, vielseitig und in guter Gemeinschaft.',
+    url: '/',
+    siteName: 'Freizeitstätte Lübars',
+    locale: 'de_DE',
+    type: 'website',
+    images: [{ url: '/og.png', width: 1792, height: 1024, alt: 'Freizeitstätte Lübars – Gemeinsam aktiv ab 55' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Freizeitstätte Lübars | Gemeinsam aktiv ab 55',
+    description: 'Der Treffpunkt für alle ab 55 in Berlin-Lübars.',
+    images: ['/og.png'],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
