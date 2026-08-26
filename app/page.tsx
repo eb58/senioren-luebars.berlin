@@ -1,13 +1,6 @@
 import Image from 'next/image';
-
-const activities = [
-  { short: 'KR', title: 'Kreativ', text: 'Gemeinsam gestalten, handarbeiten und neue Ideen ausprobieren.', tone: 'coral' },
-  { short: 'SP', title: 'Sport & Bewegung', text: 'Gymnastik, Tischtennis, Wandern und Fahrradtouren.', tone: 'green' },
-  { short: 'PC', title: 'Computer & Smartphone', text: 'Von Grundlagen über Excel bis Linux, Video und iPhone.', tone: 'blue' },
-  { short: 'KA', title: 'Karten & Schach', text: 'In geselliger Runde spielen, lernen und mitfiebern.', tone: 'gold' },
-  { short: 'EN', title: 'Englisch', text: 'Sprachkenntnisse auffrischen und gemeinsam üben.', tone: 'violet' },
-  { short: 'GE', title: 'Gesprächskreise', text: 'Aktuelles austauschen und Technikfragen miteinander lösen.', tone: 'mint' },
-];
+import Link from 'next/link';
+import { activities } from './aktivitaeten/data';
 
 const schedule = [
   {
@@ -118,15 +111,17 @@ export default function Home() {
         <section className="section activities" id="aktivitaeten">
           <SectionIntro label="Vielseitig & gesellig" title="Für jeden ist etwas dabei." text="Bewegung, Technik, Kreativität oder einfach gute Gespräche – unsere Gruppen freuen sich über bekannte und neue Gesichter." />
           <div className="activity-grid">
-            {activities.map(({ short, title, text, tone }) => (
-              <article className="activity-card" key={title}>
+            {activities.map(({ slug, short, title, summary, tone, category }) => (
+              <Link className="activity-card" href={`/aktivitaeten/${slug}`} key={slug}>
                 <span className={`activity-mark ${tone}`} aria-hidden="true">{short}</span>
+                <small className="activity-category">{category}</small>
                 <h3>{title}</h3>
-                <p>{text}</p>
-              </article>
+                <p>{summary}</p>
+                <span className="activity-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+              </Link>
             ))}
           </div>
-          <p className="section-note">Noch mehr bei uns: Videogruppe, Radtouren, Smartphone-Treff und gemeinsame Ausflüge.</p>
+          <Link className="all-groups-link" href="/aktivitaeten">Alle Gruppen auf einer Seite <Arrow /></Link>
         </section>
 
         <section className="feature-band">
