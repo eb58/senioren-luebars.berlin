@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { activities } from './aktivitaeten/data';
 
 const schedule = [
@@ -112,16 +111,16 @@ export default function Home() {
           <SectionIntro label="Vielseitig & gesellig" title="Für jeden ist etwas dabei." text="Bewegung, Technik, Kreativität oder einfach gute Gespräche – unsere Gruppen freuen sich über bekannte und neue Gesichter." />
           <div className="activity-grid">
             {activities.map(({ slug, short, title, summary, tone, category }) => (
-              <Link className="activity-card" href={`/aktivitaeten/${slug}`} key={slug}>
+              <a className="activity-card" href={`/aktivitaeten/${slug}`} key={slug}>
                 <span className={`activity-mark ${tone}`} aria-hidden="true">{short}</span>
                 <small className="activity-category">{category}</small>
                 <h3>{title}</h3>
                 <p>{summary}</p>
                 <span className="activity-link">Mehr erfahren <span aria-hidden="true">→</span></span>
-              </Link>
+              </a>
             ))}
           </div>
-          <Link className="all-groups-link" href="/aktivitaeten">Alle Gruppen auf einer Seite <Arrow /></Link>
+          <a className="all-groups-link" href="/aktivitaeten">Alle Gruppen auf einer Seite <Arrow /></a>
         </section>
 
         <section className="feature-band">
