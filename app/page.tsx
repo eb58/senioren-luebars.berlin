@@ -198,9 +198,9 @@ export default function Home() {
           <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} />
           <p>Der Treffpunkt für alle ab 55 in Berlin-Lübars.</p>
         </div>
-        <div><strong>Besuchen</strong><a href="#aktivitaeten">Aktivitäten</a><a href="#wochenplan">Wochenplan</a><a href="#ueber-uns">Über uns</a></div>
-        <div><strong>Kontakt</strong><a href="tel:+49304024485">(030) 402 44 85</a><a href="mailto:vorstand@senioren-luebars.berlin">E-Mail schreiben</a><a href="#impressum">Impressum</a></div>
-        <div className="footer-bottom" id="impressum">
+        <div><strong>Besuchen</strong><a href="#aktivitaeten">Aktivitäten</a><a href="#wochenplan">Wochenplan</a><a href="#ueber-uns">Über uns</a><a href="/dokumente">Dokumente</a></div>
+        <div><strong>Kontakt</strong><a href="tel:+49304024485">(030) 402 44 85</a><a href="mailto:vorstand@senioren-luebars.berlin">E-Mail schreiben</a><a href="/impressum">Impressum</a></div>
+        <div className="footer-bottom">
           <span>© 2026 Freizeitstätte Lübars</span>
           <span>Verantwortlich: Vorstand · Am Vierrutenberg 2 · 13469 Berlin</span>
           <a href="https://senioren-luebars.berlin/datenschutzerklaerung/" target="_blank" rel="noreferrer">Datenschutz <Arrow /></a>

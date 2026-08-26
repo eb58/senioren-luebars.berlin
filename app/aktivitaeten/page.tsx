@@ -37,7 +37,7 @@ const ActivitiesPage = () => (
         ))}
       </div>
     </main>
-    <footer className="subpage-footer"><span>© 2026 Freizeitstätte Lübars</span><a href="/">Zur Startseite</a></footer>
+    <footer className="subpage-footer"><span>© 2026 Freizeitstätte Lübars</span><span><a href="/dokumente">Dokumente</a> · <a href="/impressum">Impressum</a> · <a href="/">Zur Startseite</a></span></footer>
   </>
 );
 
