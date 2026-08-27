@@ -168,7 +168,6 @@ export default function Home() {
             <p>In unseren gemütlichen Clubräumen gehen Menschen im Seniorenalter gemeinsamen Interessen nach, lernen Neues oder genießen einfach Gesellschaft. Was zählt, sind Neugier, gegenseitige Unterstützung und Freude am Miteinander.</p>
             <figure className="club-sign">
               <Image src="/treffpunkt.jpg" alt="Schild „Treffpunkt für die ältere Generation – Freizeitclub Lübars“" width={599} height={324} />
-              <figcaption><strong>Unser Erkennungszeichen</strong><span>Das vertraute Schild unseres Freizeitclubs in Lübars.</span></figcaption>
             </figure>
             <dl className="facts">
               <div><dt>1975</dt><dd>Freizeitstätte gegründet</dd></div>

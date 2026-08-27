@@ -2,6 +2,11 @@
 
 Die Website der Freizeitstätte Lübars als Next-/Vinext-Projekt.
 
+## Veröffentlichte Website
+
+Die aktuelle Sites-Veröffentlichung ist erreichbar unter:
+[freizeitstaette-luebars.erich-brandlgmail-com.chatgpt.site](https://freizeitstaette-luebars.erich-brandlgmail-com.chatgpt.site)
+
 ## In VS Code öffnen
 
 Öffne in VS Code genau diesen Ordner:
@@ -42,4 +47,4 @@ npm run build
 Eine ausführliche Anleitung für die Veröffentlichung auf STRATO steht in
 [STRATO_DEPLOYMENT.md](./STRATO_DEPLOYMENT.md).
 
-Alternativ kann die Website weiterhin über Sites veröffentlicht werden.
+Alternativ kann die Website weiterhin über die oben verlinkte Sites-Veröffentlichung bereitgestellt werden.
