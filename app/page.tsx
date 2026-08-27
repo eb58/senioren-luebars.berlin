@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { activities } from './aktivitaeten/data';
 
 const schedule = [
@@ -96,7 +97,7 @@ export default function Home() {
             <div className="hero-fact"><span className="status-dot" /> Clubabend jeden Donnerstag ab 16:30 Uhr</div>
           </div>
           <div className="hero-image">
-            <Image src="/kaffee-kuchen.jpg" alt="Kaffee und Kuchen beim gemütlichen Beisammensein" fill sizes="(max-width: 800px) 100vw, 48vw" priority />
+            <Image src="/kaffee-kuchen.jpg" alt="Heißgetränk mit Sahne und Gebäck auf einem Cafétisch" fill sizes="(max-width: 800px) 100vw, 48vw" priority />
             <div className="hero-card"><strong>Einfach vorbeikommen</strong><span>Gäste sind herzlich willkommen.</span></div>
           </div>
         </section>
@@ -111,16 +112,16 @@ export default function Home() {
           <SectionIntro label="Vielseitig & gesellig" title="Für jeden ist etwas dabei." text="Bewegung, Technik, Kreativität oder einfach gute Gespräche – unsere Gruppen freuen sich über bekannte und neue Gesichter." />
           <div className="activity-grid">
             {activities.map(({ slug, short, title, summary, tone, category }) => (
-              <a className="activity-card" href={`/aktivitaeten/${slug}`} key={slug}>
+              <Link className="activity-card" href={`/aktivitaeten/${slug}`} key={slug}>
                 <span className={`activity-mark ${tone}`} aria-hidden="true">{short}</span>
                 <small className="activity-category">{category}</small>
                 <h3>{title}</h3>
                 <p>{summary}</p>
                 <span className="activity-link">Mehr erfahren <span aria-hidden="true">→</span></span>
-              </a>
+              </Link>
             ))}
           </div>
-          <a className="all-groups-link" href="/aktivitaeten">Alle Gruppen auf einer Seite <Arrow /></a>
+          <Link className="all-groups-link" href="/aktivitaeten">Alle Gruppen auf einer Seite <Arrow /></Link>
         </section>
 
         <section className="feature-band">
@@ -172,7 +173,7 @@ export default function Home() {
             </dl>
           </div>
           <figure className="story-image">
-            <Image src="/clubhaus.png" alt="Das Clubhaus der Freizeitstätte Lübars am Vierrutenberg" fill sizes="(max-width: 850px) 100vw, 48vw" />
+            <Image src="/clubhaus-ohne-rahmen.png" alt="Das Clubhaus der Freizeitstätte Lübars am Vierrutenberg" fill sizes="(max-width: 850px) 100vw, 48vw" />
             <figcaption>Unser Treffpunkt am Vierrutenberg</figcaption>
           </figure>
         </section>
@@ -198,8 +199,8 @@ export default function Home() {
           <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} />
           <p>Der Treffpunkt für alle ab 55 in Berlin-Lübars.</p>
         </div>
-        <div><strong>Besuchen</strong><a href="#aktivitaeten">Aktivitäten</a><a href="#wochenplan">Wochenplan</a><a href="#ueber-uns">Über uns</a><a href="/dokumente">Dokumente</a></div>
-        <div><strong>Kontakt</strong><a href="tel:+49304024485">(030) 402 44 85</a><a href="mailto:vorstand@senioren-luebars.berlin">E-Mail schreiben</a><a href="/impressum">Impressum</a></div>
+        <div><strong>Besuchen</strong><a href="#aktivitaeten">Aktivitäten</a><a href="#wochenplan">Wochenplan</a><a href="#ueber-uns">Über uns</a><Link href="/dokumente">Dokumente</Link></div>
+        <div><strong>Kontakt</strong><a href="tel:+49304024485">(030) 402 44 85</a><a href="mailto:vorstand@senioren-luebars.berlin">E-Mail schreiben</a><Link href="/impressum">Impressum</Link></div>
         <div className="footer-bottom">
           <span>© 2026 Freizeitstätte Lübars</span>
           <span>Verantwortlich: Vorstand · Am Vierrutenberg 2 · 13469 Berlin</span>

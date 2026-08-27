@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Impressum | Freizeitstätte Lübars',
@@ -10,19 +11,19 @@ const ImpressumPage = () => (
   <>
     <a className="skip-link" href="#main">Zum Inhalt springen</a>
     <header className="site-header">
-      <a className="brand" href="/" aria-label="Freizeitstätte Lübars – Startseite">
+      <Link className="brand" href="/" aria-label="Freizeitstätte Lübars – Startseite">
         <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} priority />
-      </a>
+      </Link>
       <nav aria-label="Hauptnavigation">
-        <a href="/aktivitaeten">Aktivitäten</a>
-        <a href="/dokumente">Dokumente</a>
-        <a className="nav-contact" href="/#kontakt">Kontakt</a>
+        <Link href="/aktivitaeten">Aktivitäten</Link>
+        <Link href="/dokumente">Dokumente</Link>
+        <Link className="nav-contact" href="/#kontakt">Kontakt</Link>
       </nav>
     </header>
 
     <main className="legal-page" id="main">
       <section className="legal-hero">
-        <a className="back-link" href="/"><span aria-hidden="true">←</span> Zur Startseite</a>
+        <Link className="back-link" href="/"><span aria-hidden="true">←</span> Zur Startseite</Link>
         <p className="eyebrow">Rechtliche Angaben</p>
         <h1>Impressum</h1>
         <p>Informationen über den Anbieter dieser Website und die inhaltliche Verantwortung.</p>
@@ -65,7 +66,7 @@ const ImpressumPage = () => (
 
     <footer className="subpage-footer">
       <span>© 2026 Freizeitstätte Lübars</span>
-      <span><a href="/dokumente">Dokumente</a> · <a href="/">Zur Startseite</a></span>
+      <span><Link href="/dokumente">Dokumente</Link> · <Link href="/">Zur Startseite</Link></span>
     </footer>
   </>
 );

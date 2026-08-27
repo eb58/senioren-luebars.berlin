@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { activities, getActivity } from '../data';
 
@@ -27,19 +28,19 @@ const ActivityPage = async ({ params }: ActivityPageProps) => {
   return (
     <>
       <header className="site-header">
-        <a className="brand" href="/" aria-label="Freizeitstätte Lübars – Startseite">
+        <Link className="brand" href="/" aria-label="Freizeitstätte Lübars – Startseite">
           <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} priority />
-        </a>
+        </Link>
         <nav aria-label="Hauptnavigation">
-          <a href="/aktivitaeten">Alle Aktivitäten</a>
-          <a href="/#wochenplan">Wochenplan</a>
-          <a className="nav-contact" href="/#kontakt">Kontakt</a>
+          <Link href="/aktivitaeten">Alle Aktivitäten</Link>
+          <Link href="/#wochenplan">Wochenplan</Link>
+          <Link className="nav-contact" href="/#kontakt">Kontakt</Link>
         </nav>
       </header>
       <main className="activity-detail">
         <section className={`detail-hero detail-${activity.tone}`}>
           <div>
-            <a className="back-link" href="/aktivitaeten"><span aria-hidden="true">←</span> Alle Aktivitäten</a>
+            <Link className="back-link" href="/aktivitaeten"><span aria-hidden="true">←</span> Alle Aktivitäten</Link>
             <p className="eyebrow">{activity.category}</p>
             <h1>{activity.title}</h1>
             <p>{activity.intro}</p>
@@ -59,15 +60,15 @@ const ActivityPage = async ({ params }: ActivityPageProps) => {
             <h2>{activity.meeting}</h2>
             {activity.leader && <p><span>Gruppenleitung</span><strong>{activity.leader}</strong></p>}
             <p><span>Ort</span><strong>Am Vierrutenberg 2<br />13469 Berlin</strong></p>
-            <a className="button button-primary" href="/#kontakt">Interesse anmelden <span aria-hidden="true">↗</span></a>
+            <Link className="button button-primary" href="/#kontakt">Interesse anmelden <span aria-hidden="true">↗</span></Link>
             <small>Bitte fragen Sie vor dem ersten Besuch kurz nach, ob der Termin wie geplant stattfindet.</small>
           </aside>
         </section>
-        <a className="next-activity" href={`/aktivitaeten/${next.slug}`}>
+        <Link className="next-activity" href={`/aktivitaeten/${next.slug}`}>
           <span>Nächste Gruppe</span><strong>{next.title}</strong><span aria-hidden="true">→</span>
-        </a>
+        </Link>
       </main>
-      <footer className="subpage-footer"><span>© 2026 Freizeitstätte Lübars</span><span><a href="/dokumente">Dokumente</a> · <a href="/impressum">Impressum</a> · <a href="/">Zur Startseite</a></span></footer>
+      <footer className="subpage-footer"><span>© 2026 Freizeitstätte Lübars</span><span><Link href="/dokumente">Dokumente</Link> · <Link href="/impressum">Impressum</Link> · <Link href="/">Zur Startseite</Link></span></footer>
     </>
   );
 };

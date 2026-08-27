@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { activities } from './data';
 
 export const metadata: Metadata = {
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
 const ActivitiesPage = () => (
   <>
     <header className="site-header">
-      <a className="brand" href="/" aria-label="Freizeitstätte Lübars – Startseite">
+      <Link className="brand" href="/" aria-label="Freizeitstätte Lübars – Startseite">
         <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} priority />
-      </a>
+      </Link>
       <nav aria-label="Hauptnavigation">
-        <a href="/#wochenplan">Wochenplan</a>
-        <a href="/#ueber-uns">Über uns</a>
-        <a className="nav-contact" href="/#kontakt">Kontakt</a>
+        <Link href="/#wochenplan">Wochenplan</Link>
+        <Link href="/#ueber-uns">Über uns</Link>
+        <Link className="nav-contact" href="/#kontakt">Kontakt</Link>
       </nav>
     </header>
     <main className="activity-overview">
@@ -27,17 +28,17 @@ const ActivitiesPage = () => (
       </div>
       <div className="activity-grid all-activities">
         {activities.map(({ slug, short, title, summary, tone, category }) => (
-          <a className="activity-card" href={`/aktivitaeten/${slug}`} key={slug}>
+          <Link className="activity-card" href={`/aktivitaeten/${slug}`} key={slug}>
             <span className={`activity-mark ${tone}`} aria-hidden="true">{short}</span>
             <small className="activity-category">{category}</small>
             <h2>{title}</h2>
             <p>{summary}</p>
             <span className="activity-link">Mehr erfahren <span aria-hidden="true">→</span></span>
-          </a>
+          </Link>
         ))}
       </div>
     </main>
-    <footer className="subpage-footer"><span>© 2026 Freizeitstätte Lübars</span><span><a href="/dokumente">Dokumente</a> · <a href="/impressum">Impressum</a> · <a href="/">Zur Startseite</a></span></footer>
+    <footer className="subpage-footer"><span>© 2026 Freizeitstätte Lübars</span><span><Link href="/dokumente">Dokumente</Link> · <Link href="/impressum">Impressum</Link> · <Link href="/">Zur Startseite</Link></span></footer>
   </>
 );
 
