@@ -173,7 +173,7 @@ export default function Home() {
             </dl>
           </div>
           <figure className="story-image">
-            <Image src="/clubhaus-ohne-rahmen.png" alt="Das Clubhaus der Freizeitstätte Lübars am Vierrutenberg" fill sizes="(max-width: 850px) 100vw, 48vw" />
+            <Image src="/clubhaus.png" alt="Das Clubhaus der Freizeitstätte Lübars am Vierrutenberg" fill sizes="(max-width: 850px) 100vw, 48vw" />
             <figcaption>Unser Treffpunkt am Vierrutenberg</figcaption>
           </figure>
         </section>
