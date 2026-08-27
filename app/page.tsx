@@ -80,6 +80,7 @@ export default function Home() {
           <a href="#aktivitaeten">Aktivitäten</a>
           <a href="#wochenplan">Wochenplan</a>
           <a href="#ueber-uns">Über uns</a>
+          <Link href="/dokumente">Dokumente</Link>
           <a className="nav-contact" href="#kontakt">Kontakt</a>
         </nav>
       </header>
@@ -176,7 +177,7 @@ export default function Home() {
             </dl>
           </div>
           <figure className="story-image">
-            <Image src="/clubhaus.png" alt="Das Clubhaus der Freizeitstätte Lübars am Vierrutenberg" fill sizes="(max-width: 850px) 100vw, 48vw" />
+            <Image src="/clubhaus.jpg" alt="Das Clubhaus der Freizeitstätte Lübars am Vierrutenberg" fill sizes="(max-width: 850px) 100vw, 48vw" />
             <figcaption>Unser Treffpunkt am Vierrutenberg</figcaption>
           </figure>
         </section>

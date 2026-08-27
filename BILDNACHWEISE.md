@@ -1,6 +1,6 @@
 # Bildnachweise
 
-## Freizeitstätte Lübars (`public/clubhaus.png`)
+## Freizeitstätte Lübars (`public/clubhaus.jpg`)
 
 - Motiv: Freizeitstätte Lübars am Vierrutenberg
 - Quelle: [Bezirksamt Reinickendorf von Berlin](https://www.berlin.de/imgscale4/r4zu3/ba-reinickendorf/service/einrichtungen/seniorenfreizeitstaetten/maxsize_219e098f5cda32259c6e86bf96c5716e_sfs_lubars.jpg)

@@ -34,6 +34,7 @@ const ActivityPage = async ({ params }: ActivityPageProps) => {
         <nav aria-label="Hauptnavigation">
           <Link href="/aktivitaeten">Alle Aktivitäten</Link>
           <Link href="/#wochenplan">Wochenplan</Link>
+          <Link href="/dokumente">Dokumente</Link>
           <Link className="nav-contact" href="/#kontakt">Kontakt</Link>
         </nav>
       </header>
