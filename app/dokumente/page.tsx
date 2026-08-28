@@ -4,10 +4,11 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Dokumente | Freizeitstätte Lübars',
-  description: 'Wahlordnung, Hausordnung, Rahmensatzung und Leitfaden der Freizeitstätte Lübars.',
+  description: 'Mitgliedsantrag, Wahlordnung, Hausordnung, Rahmensatzung und Leitfaden der Freizeitstätte Lübars.',
 };
 
 const documents = [
+  { title: 'Mitgliedsantrag', description: 'Antrag auf Mitgliedschaft im Seniorenclub Lübars – so werden Sie Mitglied.', file: 'mitgliedsantrag.pdf' },
   { title: 'Wahlordnung', description: 'Regelungen zur Durchführung von Wahlen.', file: 'wahlordnung.pdf' },
   { title: 'Hausordnung', description: 'Regeln für ein gutes Miteinander in der Freizeitstätte.', file: 'hausordnung.pdf' },
   { title: 'Rahmensatzung', description: 'Grundlagen für Organisation und Zusammenarbeit.', file: 'rahmensatzung.pdf' },
@@ -33,7 +34,7 @@ const DocumentsPage = () => (
         <Link className="back-link" href="/"><span aria-hidden="true">←</span> Zur Startseite</Link>
         <p className="eyebrow">Zum Nachlesen</p>
         <h1>Dokumente</h1>
-        <p>Hier finden Sie die wichtigsten Ordnungen und Grundlagen der Freizeitstätte als PDF.</p>
+        <p>Hier finden Sie die wichtigsten Ordnungen und Grundlagen der Freizeitstätte als PDF. Wie Sie Mitglied werden, erfahren Sie auf der Seite <Link className="text-link" href="/mitglied-werden">Mitglied werden</Link>.</p>
       </section>
 
       <section className="document-list" aria-label="Dokumente zum Herunterladen">

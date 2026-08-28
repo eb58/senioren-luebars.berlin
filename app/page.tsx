@@ -36,7 +36,7 @@ const schedule = [
     events: [
       ['09:00–13:00', 'Tischtennis I'],
       ['10:00–12:00', 'Computer: Publisher (2. + 4. Do.)'],
-      ['13:30–16:00', 'Kreativ-, Handarbeits- & Bastelgruppe'],
+      ['13:30–16:00', 'Kreativgruppe'],
       ['16:30–19:00', 'Clubabend'],
     ],
   },
@@ -195,6 +195,10 @@ export default function Home() {
             <a href="tel:+49304024485"><span>Telefon</span><strong>(030) 402 44 85</strong><small>Rufen Sie uns gerne an</small><Arrow /></a>
             <a href="mailto:vorstand@senioren-luebars.berlin"><span>E-Mail</span><strong>vorstand@<br />senioren-luebars.berlin</strong><small>Nachricht schreiben</small><Arrow /></a>
           </div>
+          <Link className="contact-cta" href="/mitglied-werden">
+            <span><strong>Mitglied werden</strong><small>Ablauf, Beiträge und der Antrag auf Mitgliedschaft zum Herunterladen.</small></span>
+            <span className="button button-light">So geht&rsquo;s <Arrow /></span>
+          </Link>
         </section>
       </main>
 
@@ -204,7 +208,7 @@ export default function Home() {
           <p>Der Treffpunkt für alle ab 55 in Berlin-Lübars.</p>
         </div>
         <div><strong>Besuchen</strong><a href="#aktivitaeten">Aktivitäten</a><a href="#wochenplan">Wochenplan</a><a href="#ueber-uns">Über uns</a><Link href="/dokumente">Dokumente</Link></div>
-        <div><strong>Kontakt</strong><a href="tel:+49304024485">(030) 402 44 85</a><a href="mailto:vorstand@senioren-luebars.berlin">E-Mail schreiben</a><Link href="/impressum">Impressum</Link></div>
+        <div><strong>Kontakt</strong><Link href="/mitglied-werden">Mitglied werden</Link><a href="tel:+49304024485">(030) 402 44 85</a><a href="mailto:vorstand@senioren-luebars.berlin">E-Mail schreiben</a><Link href="/impressum">Impressum</Link></div>
         <div className="footer-bottom">
           <span>© 2026 Freizeitstätte Lübars</span>
           <span>Verantwortlich: Vorstand · Am Vierrutenberg 2 · 13469 Berlin</span>

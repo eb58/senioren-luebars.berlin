@@ -3,6 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://senioren-luebars.berlin'),
+  icons: { icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }] },
   title: 'Freizeitstätte Lübars | Gemeinsam aktiv ab 55',
   description: 'Die Freizeitstätte Lübars ist der Treffpunkt für alle ab 55: mit Sport, Computergruppen, Kreativangeboten, Ausflügen und Clubabenden.',
   openGraph: {

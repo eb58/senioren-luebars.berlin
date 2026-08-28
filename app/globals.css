@@ -108,6 +108,10 @@ h2 { font-family:Georgia,'Times New Roman',serif; font-size:clamp(2.4rem,4vw,4.8
 .contact-grid strong { display:block; font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.35rem,2vw,1.9rem); font-weight:500; line-height:1.2; overflow-wrap:anywhere; }
 .contact-grid small { display:block; margin-top:1rem; color:rgba(255,255,255,.64); }
 .contact-grid>a>span:last-child { position:absolute; right:1.5rem; top:1.5rem; }
+.contact-cta { display:grid; grid-template-columns:1fr auto; align-items:center; gap:2rem; margin-top:2.5rem; padding:1.7rem 2rem; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.22); border-radius:12px; transition:background .2s; }
+.contact-cta:hover { background:rgba(255,255,255,.13); }
+.contact-cta strong { display:block; font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.5rem,2.5vw,2.1rem); font-weight:500; }
+.contact-cta small { display:block; margin-top:.35rem; color:rgba(255,255,255,.68); }
 footer { display:grid; grid-template-columns:2fr 1fr 1fr; gap:3rem; padding:60px clamp(24px,7vw,110px) 24px; background:var(--surface-soft); font-size:.9rem; }
 .footer-brand img { width:min(360px,100%); height:auto; }
 .footer-brand p { max-width:340px; color:var(--muted); }
@@ -178,8 +182,23 @@ footer a:hover { color:var(--coral); }
 .topic-list { display:grid; gap:.7rem; margin:0; padding:0; list-style:none; }
 .topic-list li { position:relative; padding:.8rem 1rem .8rem 2.8rem; background:white; border:1px solid var(--line); border-radius:8px; font-weight:700; }
 .topic-list li::before { content:'✓'; position:absolute; left:1rem; color:var(--coral); font-weight:900; }
+.step-list { display:grid; gap:1px; margin:2.2rem 0 0; padding:0; background:var(--line); border:1px solid var(--line); list-style:none; counter-reset:step; }
+.step-list li { display:grid; grid-template-columns:56px minmax(0,1fr); gap:1.2rem; padding:1.5rem; background:white; }
+.step-list li>span { color:var(--coral); font-family:Georgia,'Times New Roman',serif; font-size:1.6rem; line-height:1.2; }
+.step-list strong { display:block; margin-bottom:.3rem; font-family:Georgia,'Times New Roman',serif; font-size:1.35rem; font-weight:500; }
+.step-list p { margin:0; color:var(--muted); font-size:.96rem; }
+.fee-list { display:grid; gap:.6rem; margin:1.4rem 0 0; }
+.fee-list div { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.6rem 1.5rem; padding:.85rem 1.1rem; background:white; border:1px solid var(--line); border-radius:8px; }
+.fee-list dt { font-weight:700; }
+.fee-list dd { margin:0; color:var(--forest); font-weight:900; white-space:nowrap; }
 .meeting-card { position:sticky; top:120px; padding:2rem; background:var(--navy); color:white; border-radius:16px; box-shadow:0 20px 50px rgba(15,47,54,.16); }
-.meeting-card h2 { margin-bottom:2rem; font-size:clamp(1.8rem,3vw,2.8rem); line-height:1.12; }
+.meeting-card h2 { margin-bottom:2rem; font-size:clamp(1.4rem,2.1vw,1.95rem); line-height:1.32; letter-spacing:-.01em; text-wrap:balance; }
+.meeting-times { display:grid; margin:0 0 2rem; }
+.meeting-times div { display:grid; grid-template-columns:minmax(0,6.5rem) minmax(0,1fr); gap:.15rem 1rem; align-items:baseline; padding:.7rem 0; border-top:1px solid rgba(255,255,255,.16); }
+.meeting-times div:first-child { padding-top:0; border-top:0; }
+.meeting-times div:last-child { padding-bottom:0; }
+.meeting-times dt { color:#a8e0dc; font-size:.74rem; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
+.meeting-times dd { margin:0; font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.15rem,1.6vw,1.45rem); font-variant-numeric:tabular-nums; }
 .meeting-card>p:not(.eyebrow) { padding-top:1rem; border-top:1px solid rgba(255,255,255,.18); }
 .meeting-card p span,.meeting-card p strong { display:block; }
 .meeting-card p span { color:#a8e0dc; font-size:.72rem; font-weight:900; letter-spacing:.1em; text-transform:uppercase; }
@@ -208,6 +227,7 @@ footer a:hover { color:var(--coral); }
   .contact>div:first-child { grid-template-columns:1fr; gap:0; }
   .contact-grid { grid-template-columns:1fr; }
   .contact-grid>a { min-height:180px; border-right:0; border-bottom:1px solid rgba(255,255,255,.2); }
+  .contact-cta { grid-template-columns:1fr; gap:1.2rem; }
   footer { grid-template-columns:1fr 1fr; }
   .footer-brand,.footer-bottom { grid-column:1/-1; }
   .detail-hero { grid-template-columns:1fr; }

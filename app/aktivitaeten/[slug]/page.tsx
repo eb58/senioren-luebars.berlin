@@ -58,7 +58,9 @@ const ActivityPage = async ({ params }: ActivityPageProps) => {
           </div>
           <aside className="meeting-card">
             <p className="eyebrow">Termin</p>
-            <h2>{activity.meeting}</h2>
+            <dl className="meeting-times">
+              {activity.meeting.map(([label, time]) => <div key={label}><dt>{label}</dt><dd>{time}</dd></div>)}
+            </dl>
             {activity.leader && <p><span>Gruppenleitung</span><strong>{activity.leader}</strong></p>}
             <p><span>Ort</span><strong>Am Vierrutenberg 2<br />13469 Berlin</strong></p>
             <Link className="button button-primary" href="/#kontakt">Interesse anmelden <span aria-hidden="true">↗</span></Link>
