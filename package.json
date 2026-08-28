@@ -8,6 +8,8 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build && node scripts/prepare-strato.js",
+    "watch": "node scripts/watch.js",
+    "deploy": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/deploy.ps1",
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
   },
