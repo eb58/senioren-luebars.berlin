@@ -4,8 +4,8 @@ Die Website der Freizeitstätte Lübars als Next-/Vinext-Projekt.
 
 ## Veröffentlichte Website
 
-Die aktuelle Sites-Veröffentlichung ist erreichbar unter:
-[freizeitstaette-luebars.erich-brandlgmail-com.chatgpt.site](https://freizeitstaette-luebars.erich-brandlgmail-com.chatgpt.site)
+Die Website ist erreichbar unter:
+[senioren-luebars.berlin](https://senioren-luebars.berlin)
 
 ## In VS Code öffnen
 
@@ -36,6 +36,8 @@ Danach ist die Vorschau unter http://localhost:3000 erreichbar.
 - `app/globals.css` – Gestaltung und responsive Layouts
 - `public/` – Bilder, Logo und PDF-Dokumente
 - `BILDNACHWEISE.md` – Quellen und Lizenzen der verwendeten Stockbilder
+- `scripts/deploy.ps1` – Veröffentlichung nach `Seniorenclub/website` auf STRATO
+- `server/htaccess-webroot.txt` – Vorlage der gemeinsamen `.htaccess` im Webroot
 
 Vor einer Veröffentlichung:
 
@@ -44,7 +46,25 @@ npm run lint
 npm run build
 ```
 
-Eine ausführliche Anleitung für die Veröffentlichung auf STRATO steht in
-[STRATO_DEPLOYMENT.md](./STRATO_DEPLOYMENT.md).
+Wer laufend am fertigen Upload-Ordner arbeitet, kann den Build automatisch
+wiederholen lassen:
 
-Alternativ kann die Website weiterhin über die oben verlinkte Sites-Veröffentlichung bereitgestellt werden.
+```bash
+npm run watch
+```
+
+Der Befehl baut einmal komplett und danach bei jeder Änderung in `app/`,
+`public/`, `scripts/` oder den Konfigurationsdateien erneut nach `dist/client`.
+Beenden mit `Strg+C`. Für die tägliche Arbeit am Inhalt bleibt `npm run dev`
+die schnellere Wahl.
+
+## Auf STRATO veröffentlichen
+
+Voraussetzungen sind Node.js 22.13 oder neuer sowie ein eingerichteter
+OpenSSH-Zugang für `stu512072182@56759440.ssh.w1.strato.hosting`.
+Der folgende Befehl baut die Website und lädt sie nach
+`Seniorenclub/website` hoch:
+
+```bash
+npm run deploy
+```

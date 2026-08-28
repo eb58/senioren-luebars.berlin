@@ -1,0 +1,40 @@
+# Gemeinsame Weiche im Webroot /Seniorenclub der Domain senioren-luebars.berlin.
+#
+# Jedes Projekt liegt in einem eigenen Unterverzeichnis:
+#   website/               statische Website (Projekt senioren-luebars.berlin)
+#   mitgliederverwaltung/  Mitgliederverwaltung inkl. php-api
+#   gratulationsdienst/    Gratulationsdienst
+#   terminfinder/          Terminfinder
+#
+# Diese Datei wird von Hand gepflegt und beim Deploy NICHT ueberschrieben
+# (nur mit "npm run deploy -- -UploadRootHtaccess").
+# Kommt ein Projekt dazu, muss sein Verzeichnisname unten in die Ausnahmeliste.
+#
+# Ersetzt den frueheren WordPress-Block: dessen "RewriteRule . /index.php"
+# zeigte auf ein index.php, das es im Webroot nicht mehr gibt.
+
+RewriteEngine On
+
+# Authorization-Header an PHP durchreichen (fuer die API der Mitgliederverwaltung).
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Komfort-URLs der Mitgliederverwaltung. Ihr Frontend ruft php-api/index.php
+# direkt auf, braucht diese Regeln also nicht - sie entsprechen aber der
+# Vorlage server/apache-root.htaccess des Projekts Mitgliederverwaltung.
+RewriteRule ^mitgliederverwaltung/api(/.*)?$ mitgliederverwaltung/php-api/index.php [QSA,L]
+RewriteRule ^mitgliederverwaltung/health$ mitgliederverwaltung/php-api/index.php [QSA,L]
+
+# Startseite liefert die Website aus.
+RewriteRule ^$ website/index.html [L]
+
+# Alles Uebrige geht an die Website - ausser den Verzeichnissen der anderen
+# Projekte und .well-known (Zertifikatspruefung). Die Bedingung prueft den
+# angefragten Pfad relativ zu diesem Verzeichnis und ist damit unabhaengig
+# davon, wie STRATO die Domain auf das Webroot abbildet.
+RewriteCond $1 !^(website|mitgliederverwaltung|gratulationsdienst|terminfinder|\.well-known)(/|$)
+RewriteRule ^(.*)$ website/$1 [L]
+
+SetEnvIf Authorization "(.+)" HTTP_AUTHORIZATION=$1
+
+ErrorDocument 404 /website/404.html
