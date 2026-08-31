@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import SiteHeader from '@/components/site-header';
 import { activities, getActivity } from '../data';
 
 type ActivityPageProps = { params: Promise<{ slug: string }> };
@@ -27,17 +27,12 @@ const ActivityPage = async ({ params }: ActivityPageProps) => {
 
   return (
     <>
-      <header className="site-header">
-        <Link className="brand" href="/" aria-label="Freizeitstätte Lübars – Startseite">
-          <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} priority />
-        </Link>
-        <nav aria-label="Hauptnavigation">
-          <Link href="/aktivitaeten">Alle Aktivitäten</Link>
-          <Link href="/#wochenplan">Wochenplan</Link>
-          <Link href="/dokumente">Dokumente</Link>
-          <Link className="nav-contact" href="/#kontakt">Kontakt</Link>
-        </nav>
-      </header>
+      <SiteHeader links={[
+        { href: '/aktivitaeten', label: 'Alle Aktivitäten' },
+        { href: '/#wochenplan', label: 'Wochenplan' },
+        { href: '/dokumente', label: 'Dokumente' },
+        { href: '/#kontakt', label: 'Kontakt', contact: true },
+      ]} />
       <main className="activity-detail">
         <section className={`detail-hero detail-${activity.tone}`}>
           <div>
