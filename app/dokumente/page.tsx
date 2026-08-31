@@ -46,7 +46,7 @@ const DocumentsPage = () => (
 
     <footer className="subpage-footer">
       <span>© 2026 Freizeitstätte Lübars</span>
-      <span><Link href="/impressum">Impressum</Link> · <Link href="/">Zur Startseite</Link></span>
+      <span><Link href="/impressum">Impressum</Link> · <Link href="/datenschutz">Datenschutz</Link> · <Link href="/">Zur Startseite</Link></span>
     </footer>
   </>
 );

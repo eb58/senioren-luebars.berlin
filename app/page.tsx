@@ -209,8 +209,8 @@ export default function Home() {
         <div><strong>Kontakt</strong><Link href="/mitglied-werden">Mitglied werden</Link><a href="tel:+49304024485">(030) 402 44 85</a><a href="mailto:vorstand@senioren-luebars.berlin">E-Mail schreiben</a><Link href="/impressum">Impressum</Link></div>
         <div className="footer-bottom">
           <span>© 2026 Freizeitstätte Lübars</span>
-          <span>Verantwortlich: Vorstand · Am Vierrutenberg 2 · 13469 Berlin</span>
-          <a href="https://senioren-luebars.berlin/datenschutzerklaerung/" target="_blank" rel="noreferrer">Datenschutz <Arrow /></a>
+          <span>Verantwortlich: Erich Brandl · Am Vierrutenberg 2 · 13469 Berlin</span>
+          <Link href="/datenschutz">Datenschutz</Link>
         </div>
       </footer>
     </>
