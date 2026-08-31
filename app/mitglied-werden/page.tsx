@@ -62,8 +62,6 @@ const MembershipPage = () => (
               <div key={label}><dt>{label}</dt><dd>{amount}</dd></div>
             ))}
           </dl>
-          <p className="section-note">Bankverbindung: Senioren-Freizeitclub Lübars · IBAN DE73 1008 0000 0734 7923 01</p>
-
           <h3>Noch Fragen?</h3>
           <p>Rufen Sie uns einfach an unter <a className="text-link" href="tel:+49304024485">(030) 402 44 85</a> oder schreiben Sie an <a className="text-link" href="mailto:vorstand@senioren-luebars.berlin">vorstand@senioren-luebars.berlin</a>. Wir helfen auch gerne beim Ausfüllen des Antrags.</p>
         </div>
