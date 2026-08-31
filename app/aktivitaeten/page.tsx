@@ -28,9 +28,9 @@ const ActivitiesPage = () => (
         <p>Wählen Sie eine Gruppe aus, um Termine und weitere Informationen zu sehen.</p>
       </div>
       <div className="activity-grid all-activities">
-        {activities.map(({ slug, short, title, summary, tone, category }) => (
+        {activities.map(({ slug, icon, title, summary, tone, category }) => (
           <Link className="activity-card" href={`/aktivitaeten/${slug}`} key={slug}>
-            <span className={`activity-mark ${tone}`} aria-hidden="true">{short}</span>
+            <span className={`activity-mark ${tone}`} aria-hidden="true">{icon}</span>
             <small className="activity-category">{category}</small>
             <h2>{title}</h2>
             <p>{summary}</p>
