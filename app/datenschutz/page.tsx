@@ -43,7 +43,7 @@ const DatenschutzPage = () => (
 
         <section className="legal-section legal-wide">
           <h2>Aufruf der Website (Server-Logfiles)</h2>
-          <p>Die Website wird bei der STRATO AG, Otto-Ostrowski-Straße 7, 10249 Berlin, gehostet. Beim Aufruf speichert der Server automatisch Daten in Logfiles: IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, übertragene Datenmenge, Referrer sowie Browser- und Betriebssystemtyp. Das ist technisch nötig, um die Seite auszuliefern und den Betrieb sicher und stabil zu halten. Rechtsgrundlage ist unser berechtigtes Interesse an einem funktionsfähigen Internetauftritt (Art. 6 Abs. 1 lit. f DSGVO). Die Logdaten werden nach 7 Tagen gelöscht. Mit der STRATO AG besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO; STRATO setzt dabei die IONOS SE, Elgendorfer Str. 7, 56410 Montabaur, als Unterauftragsverarbeiter ein.</p>
+          <p>Die Website wird bei der STRATO GmbH, Otto-Ostrowski-Straße 7, 10249 Berlin, gehostet. Beim Aufruf speichert der Server automatisch Daten in Logfiles: IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, übertragene Datenmenge, Referrer sowie Browser- und Betriebssystemtyp. Das ist technisch nötig, um die Seite auszuliefern und den Betrieb sicher und stabil zu halten. Rechtsgrundlage ist unser berechtigtes Interesse an einem funktionsfähigen Internetauftritt (Art. 6 Abs. 1 lit. f DSGVO). Die Logdaten werden nach 7 Tagen gelöscht. Mit der STRATO GmbH besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO; STRATO setzt dabei die IONOS SE, Elgendorfer Str. 7, 56410 Montabaur, als Unterauftragsverarbeiter ein.</p>
         </section>
 
         <section className="legal-section legal-wide">
