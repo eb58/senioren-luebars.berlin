@@ -191,6 +191,12 @@ footer a:hover { color:var(--coral); }
 .fee-list div { display:flex; flex-wrap:wrap; justify-content:space-between; gap:.6rem 1.5rem; padding:.85rem 1.1rem; background:white; border:1px solid var(--line); border-radius:8px; }
 .fee-list dt { font-weight:700; }
 .fee-list dd { margin:0; color:var(--forest); font-weight:900; white-space:nowrap; }
+.club-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; margin:1.4rem 0 0; padding:0; background:var(--line); border:1px solid var(--line); list-style:none; }
+.club-grid li { display:flex; flex-direction:column; gap:.25rem; padding:1.2rem 1.3rem; background:white; }
+.club-grid strong { font-family:Georgia,'Times New Roman',serif; font-size:1.2rem; font-weight:500; }
+.club-grid strong a:hover { color:var(--coral); }
+.club-grid span { color:var(--muted); font-size:.92rem; line-height:1.45; }
+.club-grid .club-phone { margin-top:.4rem; color:var(--forest); font-weight:800; }
 .meeting-card { position:sticky; top:120px; padding:2rem; background:var(--navy); color:white; border-radius:16px; box-shadow:0 20px 50px rgba(15,47,54,.16); }
 .meeting-card h2 { margin-bottom:2rem; font-size:clamp(1.4rem,2.1vw,1.95rem); line-height:1.32; letter-spacing:-.01em; text-wrap:balance; }
 .meeting-times { display:grid; margin:0 0 2rem; }
@@ -233,6 +239,7 @@ footer a:hover { color:var(--coral); }
   .detail-hero { grid-template-columns:1fr; }
   .detail-mark { width:150px; }
   .detail-content { grid-template-columns:1fr; }
+  .club-grid { grid-template-columns:1fr; }
   .meeting-card { position:static; }
   .legal-grid { grid-template-columns:1fr; background:none; gap:1rem; }
   .legal-wide { grid-column:auto; }
