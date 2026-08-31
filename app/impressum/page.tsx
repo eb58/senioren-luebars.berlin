@@ -31,7 +31,6 @@ const ImpressumPage = () => (
           <address>Am Vierrutenberg 2<br />13469 Berlin</address>
           <p>Verein ohne Rechtspersönlichkeit (nicht eingetragener Verein)</p>
           <dl>
-            <div><dt>Vertreten durch den Vorstand</dt><dd>Erich Brandl</dd></div>
             <div><dt>Telefon</dt><dd><a href="tel:+49304024485">(030) 402 44 85</a></dd></div>
             <div><dt>Telefax</dt><dd>(030) 402 08 826</dd></div>
             <div><dt>E-Mail</dt><dd><a href="mailto:vorstand@senioren-luebars.berlin">vorstand@senioren-luebars.berlin</a></dd></div>
@@ -40,7 +39,7 @@ const ImpressumPage = () => (
 
         <section className="legal-section legal-responsibility">
           <p className="eyebrow">Verantwortlich nach § 18 Abs. 2 MStV</p>
-          <h2>Erich Brandl</h2>
+          <h2>Vorstand</h2>
           <address>Am Vierrutenberg 2<br />13469 Berlin</address>
           <p>Datenschutz: siehe <Link className="text-link" href="/datenschutz">Datenschutzerklärung</Link>.</p>
         </section>
