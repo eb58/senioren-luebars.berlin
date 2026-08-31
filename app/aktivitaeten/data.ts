@@ -142,7 +142,7 @@ export const activities: Activity[] = [
   {
     slug: 'smartphone',
     short: 'SM',
-    icon: '⌕',
+    icon: '📱',
     title: 'Smartphone & Tablet',
     summary: 'Sicherer mit Smartphone, iPhone und iPad umgehen.',
     intro: 'Das Smartphone ist das meistgenutzte Kommunikationsmittel. Wir machen Sie Schritt für Schritt fit für den Alltag.',
@@ -170,7 +170,7 @@ export const activities: Activity[] = [
   {
     slug: 'wandern',
     short: 'WA',
-    icon: '⌁',
+    icon: '🥾',
     title: 'Wandern',
     summary: 'Natur, Bewegung und gute Gespräche im Berliner Norden.',
     intro: 'Unsere Wandergruppe ist rund um das Fließtal zwischen Glienicke und dem Freizeitpark Lübars unterwegs.',
@@ -184,7 +184,7 @@ export const activities: Activity[] = [
   {
     slug: 'fahrradtouren',
     short: 'RA',
-    icon: '◌',
+    icon: '🚲',
     title: 'Fahrradtouren',
     summary: 'Mit dem Rad gemeinsam die Natur unserer Umgebung erleben.',
     intro: 'Mit dem Rad geht es durch die grüne Umgebung von Lübars und in den Berliner Norden – für alle, die gerne gemeinsam unterwegs sind.',
