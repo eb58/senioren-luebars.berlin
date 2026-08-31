@@ -46,7 +46,7 @@ const ActivityPage = async ({ params }: ActivityPageProps) => {
             <h1>{activity.title}</h1>
             <p>{activity.intro}</p>
           </div>
-          <span className={`detail-mark ${activity.tone}`} aria-hidden="true">{activity.short}</span>
+          <span className={`detail-mark ${activity.tone}`} aria-hidden="true">{activity.icon}</span>
         </section>
         <section className="detail-content">
           <div className="detail-copy">

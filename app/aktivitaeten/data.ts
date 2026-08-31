@@ -1,6 +1,7 @@
 export type Activity = {
   slug: string;
   short: string;
+  icon: string;
   title: string;
   summary: string;
   intro: string;
@@ -16,6 +17,7 @@ export const activities: Activity[] = [
   {
     slug: 'kreativ',
     short: 'KR',
+    icon: '✎',
     title: 'Kreativ',
     summary: 'Gemeinsam gestalten, handarbeiten und neue Ideen ausprobieren.',
     intro: 'Basteln war früher – heute heißt es kreativ sein. Denn kreativ sein bedeutet, das Leben mit eigenen Ideen zu gestalten.',
@@ -29,6 +31,7 @@ export const activities: Activity[] = [
   {
     slug: 'kartenspiel',
     short: 'KA',
+    icon: '♣',
     title: 'Kartenspiel',
     summary: 'Klassische Kartenspiele lernen und in geselliger Runde spielen.',
     intro: 'Unsere Freizeitstätte wird zur kleinen Spielhölle – natürlich nur im besten Sinne. Hier geht es um Freude am Spiel und gute Gesellschaft.',
@@ -42,6 +45,7 @@ export const activities: Activity[] = [
   {
     slug: 'gymnastik',
     short: 'GY',
+    icon: '◉',
     title: 'Gymnastik',
     summary: 'Mit Musik und Bewegung beweglich und sicher im Alltag bleiben.',
     intro: 'Musik und Bewegung bringen Schwung in die Woche und helfen dabei, Gelenke und Muskulatur möglichst lange beweglich zu halten.',
@@ -55,6 +59,7 @@ export const activities: Activity[] = [
   {
     slug: 'tischtennis',
     short: 'TT',
+    icon: '●',
     title: 'Tischtennis',
     summary: 'Sport, Reaktion und jede Menge Spaß mit dem kleinen Ball.',
     intro: 'Ping – Pong – Ping – Pong: Wir machen das Spiel mit dem kleinen Ball zum sportlichen Erlebnis und haben viel Spaß dabei.',
@@ -68,6 +73,7 @@ export const activities: Activity[] = [
   {
     slug: 'englisch',
     short: 'EN',
+    icon: 'Aa',
     title: 'Englisch',
     summary: 'Sprachkenntnisse auffrischen und gemeinsam sicherer sprechen.',
     intro: 'How do you do? Bei uns zählt „Ich verstehe nur Bahnhof“ nicht – wir frischen Englisch gemeinsam und ohne Leistungsdruck auf.',
@@ -81,6 +87,7 @@ export const activities: Activity[] = [
   {
     slug: 'schach',
     short: 'SC',
+    icon: '♞',
     title: 'Schach',
     summary: 'Geistige Fitness, schöne Kombinationen und gemeinsame Partien.',
     intro: 'Schach ist eines der komplexesten Brettspiele und ein ideales Training für Gedächtnis, Konzentration und räumliches Vorstellungsvermögen.',
@@ -94,6 +101,7 @@ export const activities: Activity[] = [
   {
     slug: 'pc-im-alltag',
     short: 'PC',
+    icon: '⌘',
     title: 'PC im Alltag',
     summary: 'Alltägliche Computerfragen gemeinsam lösen und Neues entdecken.',
     intro: 'Der Computer gehört heute zum Alltag. In der Gruppe können Mitglieder ihre täglichen Fragen zur Sprache bringen und voneinander lernen.',
@@ -106,6 +114,7 @@ export const activities: Activity[] = [
   {
     slug: 'pc-anfaenger',
     short: 'PA',
+    icon: '⌘',
     title: 'PC Anfänger & Fortgeschrittene',
     summary: 'Den Computer von Grund auf verstehen oder vorhandenes Wissen vertiefen.',
     intro: 'Es gibt immer ein erstes Mal. Hier lernen Einsteigerinnen und Einsteiger den Computer in verständlichen Schritten kennen.',
@@ -119,6 +128,7 @@ export const activities: Activity[] = [
   {
     slug: 'excel',
     short: 'EX',
+    icon: '▦',
     title: 'Excel',
     summary: 'Tabellen, Berechnungen und praktische Aufgaben verständlich lösen.',
     intro: 'Zahlen, Tabellen und Berechnungen begegnen uns überall. Gemeinsam erschließen wir die Möglichkeiten von Microsoft Excel.',
@@ -132,6 +142,7 @@ export const activities: Activity[] = [
   {
     slug: 'smartphone',
     short: 'SM',
+    icon: '⌕',
     title: 'Smartphone & Tablet',
     summary: 'Sicherer mit Smartphone, iPhone und iPad umgehen.',
     intro: 'Das Smartphone ist das meistgenutzte Kommunikationsmittel. Wir machen Sie Schritt für Schritt fit für den Alltag.',
@@ -145,6 +156,7 @@ export const activities: Activity[] = [
   {
     slug: 'videogruppe',
     short: 'VI',
+    icon: '▶',
     title: 'Videogruppe',
     summary: 'Eigene Aufnahmen drehen, schneiden und als Film gestalten.',
     intro: 'Die Videogruppe beschäftigt sich mit Videoschnitt am PC. Auch Aufnahmen vom Smartphone eignen sich hervorragend für eigene Filmprojekte.',
@@ -158,6 +170,7 @@ export const activities: Activity[] = [
   {
     slug: 'wandern',
     short: 'WA',
+    icon: '⌁',
     title: 'Wandern',
     summary: 'Natur, Bewegung und gute Gespräche im Berliner Norden.',
     intro: 'Unsere Wandergruppe ist rund um das Fließtal zwischen Glienicke und dem Freizeitpark Lübars unterwegs.',
@@ -171,6 +184,7 @@ export const activities: Activity[] = [
   {
     slug: 'fahrradtouren',
     short: 'RA',
+    icon: '◌',
     title: 'Fahrradtouren',
     summary: 'Mit dem Rad gemeinsam die Natur unserer Umgebung erleben.',
     intro: 'Mit dem Rad geht es durch die grüne Umgebung von Lübars und in den Berliner Norden – für alle, die gerne gemeinsam unterwegs sind.',
