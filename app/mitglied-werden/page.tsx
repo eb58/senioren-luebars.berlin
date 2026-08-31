@@ -21,6 +21,17 @@ const fees = [
   ['Computerbeitrag (nur für Computergruppen)', '20,00 € / Jahr'],
 ];
 
+const siblingClubs = [
+  { name: 'Freizeitzentrum Adelheidallee', address: 'Adelheidallee 5–7, 13507 Berlin', phone: '(030) 433 40 03', tel: '+49304334003', offer: 'Tischtennis, Tanz, Malerei, Theater, Wanderungen, Restaurant', url: 'https://www.berlin.de/ba-reinickendorf/service/einrichtungen/seniorenfreizeitstaetten/artikel.105099.php' },
+  { name: 'Hermsdorfer Seniorenfüchse', address: 'Berliner Straße 105–107, 13467 Berlin', phone: '(030) 404 40 28', tel: '+49304044028', offer: 'Skat, Bridge, Chor, Gymnastik, Wanderungen, Fahrradtouren', url: 'https://www.berlin.de/ba-reinickendorf/service/einrichtungen/seniorenfreizeitstaetten/artikel.105105.php' },
+  { name: 'Freizeitclub Tegel', address: 'Alt-Tegel 43, 13507 Berlin', phone: '(030) 433 12 02', tel: '+49304331202', offer: 'Bingo, Rommé, Yoga, Handarbeit, Kegeln, Englisch, Tanz', url: 'https://www.berlin.de/ba-reinickendorf/service/einrichtungen/seniorenfreizeitstaetten/artikel.105110.php' },
+  { name: 'Freizeitstätte Am Schäfersee', address: 'Stargardtstraße 3, 13407 Berlin', phone: '(030) 455 99 88', tel: '+49304559988', offer: 'Bingo, Englisch, Gedächtnistraining, Gymnastik, Schach, Ausflüge', url: 'https://www.berlin.de/ba-reinickendorf/service/einrichtungen/seniorenfreizeitstaetten/artikel.105144.php' },
+  { name: 'Seniorenfreizeitstätte Heiligensee', address: 'Alt-Heiligensee 39, 13503 Berlin', phone: '(030) 431 29 39', tel: '+49304312939', offer: 'Kartenspiele, Computerkurse, Englisch, Line Dance, Walking, Basteln', url: 'https://www.berlin.de/ba-reinickendorf/service/einrichtungen/seniorenfreizeitstaetten/artikel.105149.php' },
+  { name: 'Club der Lebensfrohen', address: 'Wilhelmsruher Damm 142 c, 13439 Berlin', phone: '(030) 902 94 38 68', tel: '+4930902943868', offer: 'Spiele- und Bastelgruppe, Gymnastik, Bingo, Tanz, Gedächtnistraining', url: 'https://www.berlin.de/ba-reinickendorf/service/einrichtungen/seniorenfreizeitstaetten/artikel.105181.php' },
+  { name: 'Märkischer Seniorentreff', address: 'Senftenberger Ring 34 a, 13435 Berlin', phone: '(030) 31 95 31 44', tel: '+493031953144', offer: 'Kartenspiele, Gymnastik, Basteln, Bingo, Tanznachmittage, Tagesfahrten', url: 'https://www.berlin.de/ba-reinickendorf/service/einrichtungen/seniorenfreizeitstaetten/artikel.105189.php' },
+  { name: 'Aussiedlerberatung Reinickendorf', address: 'Auguste-Viktoria-Allee 50 a, 13403 Berlin', phone: '(030) 41 20 25 97', tel: '+493041202597', offer: 'Chor, Tanzgruppen, Gymnastik, Billard, Herrenclub, Deutschkurse – Beratung und Gruppen auch auf Russisch', url: 'https://www.berlin.de/ba-reinickendorf/auf-einen-blick/fuer-seniorinnen/aussiedlerberatung/artikel.1502384.php' },
+];
+
 const MembershipPage = () => (
   <>
     <a className="skip-link" href="#main">Zum Inhalt springen</a>
@@ -62,6 +73,19 @@ const MembershipPage = () => (
               <div key={label}><dt>{label}</dt><dd>{amount}</dd></div>
             ))}
           </dl>
+          <h3>In ganz Reinickendorf willkommen</h3>
+          <p>Ihre Mitgliedskarte gilt bezirksweit: Damit besuchen Sie auch die anderen Seniorenfreizeitstätten in Reinickendorf und deren Gruppen – ganz ohne zusätzlichen Beitrag. Rufen Sie dort am besten kurz vorher an.</p>
+          <ul className="club-grid">
+            {siblingClubs.map(({ name, address, phone, tel, offer, url }) => (
+              <li key={name}>
+                <strong><a href={url} target="_blank" rel="noreferrer">{name} <Arrow /></a></strong>
+                <span>{address}</span>
+                <span>{offer}</span>
+                <a className="club-phone" href={`tel:${tel}`}>{phone}</a>
+              </li>
+            ))}
+          </ul>
+
           <h3>Noch Fragen?</h3>
           <p>Rufen Sie uns einfach an unter <a className="text-link" href="tel:+49304024485">(030) 402 44 85</a> oder schreiben Sie an <a className="text-link" href="mailto:vorstand@senioren-luebars.berlin">vorstand@senioren-luebars.berlin</a>. Wir helfen auch gerne beim Ausfüllen des Antrags.</p>
         </div>
