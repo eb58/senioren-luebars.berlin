@@ -1,0 +1,8 @@
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Vinext exportiert Unterseiten als <route>.html. Saubere URLs wie
+# /aktivitaeten oder /aktivitaeten/ werden auf diese Datei abgebildet.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+?)/?$ $1.html [L]
