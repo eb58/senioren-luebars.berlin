@@ -28,7 +28,7 @@ const DatenschutzPage = () => (
         <section className="legal-section legal-contact-card">
           <p className="eyebrow">Verantwortlicher im Sinne der DSGVO</p>
           <h2>Senioren-Freizeitclub Lübars</h2>
-          <p>Verein ohne Rechtspersönlichkeit (nicht eingetragener Verein), vertreten durch den Vorstand Erich Brandl</p>
+          <p>Verein ohne Rechtspersönlichkeit (nicht eingetragener Verein), vertreten durch den Vorstand</p>
           <address>Am Vierrutenberg 2<br />13469 Berlin</address>
           <dl>
             <div><dt>Telefon</dt><dd><a href="tel:+49304024485">(030) 402 44 85</a></dd></div>
