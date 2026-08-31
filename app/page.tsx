@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import SiteHeader from '@/components/site-header';
 import { activities } from './aktivitaeten/data';
 
 const schedule = [
@@ -60,6 +61,14 @@ const schedule = [
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
+const navigation = [
+  { href: '#aktivitaeten', label: 'Aktivitäten' },
+  { href: '#wochenplan', label: 'Wochenplan' },
+  { href: '#ueber-uns', label: 'Über uns' },
+  { href: '/dokumente', label: 'Dokumente' },
+  { href: '#kontakt', label: 'Kontakt', contact: true },
+] as const;
+
 const SectionIntro = ({ label, title, text }: { label: string; title: string; text?: string }) => (
   <div className="section-intro">
     <p className="eyebrow">{label}</p>
@@ -72,18 +81,7 @@ export default function Home() {
   return (
     <>
       <a className="skip-link" href="#main">Zum Inhalt springen</a>
-      <header className="site-header">
-        <a className="brand" href="#start" aria-label="Freizeitstätte Lübars – Startseite">
-          <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} priority />
-        </a>
-        <nav aria-label="Hauptnavigation">
-          <a href="#aktivitaeten">Aktivitäten</a>
-          <a href="#wochenplan">Wochenplan</a>
-          <a href="#ueber-uns">Über uns</a>
-          <Link href="/dokumente">Dokumente</Link>
-          <a className="nav-contact" href="#kontakt">Kontakt</a>
-        </nav>
-      </header>
+      <SiteHeader brandHref="#start" links={navigation} />
 
       <main id="main">
         <section className="hero" id="start">

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
+import SiteHeader from '@/components/site-header';
 
 export const metadata: Metadata = {
   title: 'Mitglied werden | Freizeitstätte Lübars',
@@ -35,17 +35,12 @@ const siblingClubs = [
 const MembershipPage = () => (
   <>
     <a className="skip-link" href="#main">Zum Inhalt springen</a>
-    <header className="site-header">
-      <Link className="brand" href="/" aria-label="Freizeitstätte Lübars – Startseite">
-        <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} priority />
-      </Link>
-      <nav aria-label="Hauptnavigation">
-        <Link href="/aktivitaeten">Aktivitäten</Link>
-        <Link href="/dokumente">Dokumente</Link>
-        <Link href="/impressum">Impressum</Link>
-        <Link className="nav-contact" href="/#kontakt">Kontakt</Link>
-      </nav>
-    </header>
+    <SiteHeader links={[
+      { href: '/aktivitaeten', label: 'Aktivitäten' },
+      { href: '/dokumente', label: 'Dokumente' },
+      { href: '/impressum', label: 'Impressum' },
+      { href: '/#kontakt', label: 'Kontakt', contact: true },
+    ]} />
 
     <main className="legal-page" id="main">
       <section className="legal-hero">

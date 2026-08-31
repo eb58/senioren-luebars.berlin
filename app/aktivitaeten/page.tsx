@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
+import SiteHeader from '@/components/site-header';
 import { activities } from './data';
 
 export const metadata: Metadata = {
@@ -10,17 +10,12 @@ export const metadata: Metadata = {
 
 const ActivitiesPage = () => (
   <>
-    <header className="site-header">
-      <Link className="brand" href="/" aria-label="Freizeitstätte Lübars – Startseite">
-        <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} priority />
-      </Link>
-      <nav aria-label="Hauptnavigation">
-        <Link href="/#wochenplan">Wochenplan</Link>
-        <Link href="/#ueber-uns">Über uns</Link>
-        <Link href="/dokumente">Dokumente</Link>
-        <Link className="nav-contact" href="/#kontakt">Kontakt</Link>
-      </nav>
-    </header>
+    <SiteHeader links={[
+      { href: '/#wochenplan', label: 'Wochenplan' },
+      { href: '/#ueber-uns', label: 'Über uns' },
+      { href: '/dokumente', label: 'Dokumente' },
+      { href: '/#kontakt', label: 'Kontakt', contact: true },
+    ]} />
     <main className="activity-overview">
       <div className="subpage-title">
         <p className="eyebrow">Alle Gruppen im Überblick</p>
