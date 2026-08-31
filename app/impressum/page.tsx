@@ -27,11 +27,11 @@ const ImpressumPage = () => (
       <div className="legal-grid">
         <section className="legal-section legal-contact-card">
           <p className="eyebrow">Angaben gemäß § 5 DDG</p>
-          <h2>Freizeitstätte Lübars</h2>
+          <h2>Senioren-Freizeitclub Lübars</h2>
           <address>Am Vierrutenberg 2<br />13469 Berlin</address>
-          <p>Nicht eingetragener Verein (Freizeitclub). Betreiber der Website ist der Club selbst.</p>
+          <p>Verein ohne Rechtspersönlichkeit (nicht eingetragener Verein)</p>
           <dl>
-            <div><dt>Vertretung</dt><dd>Erich Brandl (Vorstand)</dd></div>
+            <div><dt>Vertreten durch den Vorstand</dt><dd>Erich Brandl</dd></div>
             <div><dt>Telefon</dt><dd><a href="tel:+49304024485">(030) 402 44 85</a></dd></div>
             <div><dt>Telefax</dt><dd>(030) 402 08 826</dd></div>
             <div><dt>E-Mail</dt><dd><a href="mailto:vorstand@senioren-luebars.berlin">vorstand@senioren-luebars.berlin</a></dd></div>
