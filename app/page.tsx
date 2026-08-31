@@ -96,7 +96,7 @@ export default function Home() {
             <div className="hero-fact"><span className="status-dot" /> Clubabend jeden Donnerstag ab 16:30 Uhr</div>
           </div>
           <div className="hero-image">
-            <Image src="/kaffee-kuchen.jpg" alt="Heißgetränk mit Sahne und Gebäck auf einem Cafétisch" fill sizes="(max-width: 800px) 100vw, 48vw" priority />
+            <Image src="/clubhaus.jpg" alt="Das Clubhaus der Freizeitstätte Lübars am Vierrutenberg" fill sizes="(max-width: 800px) 100vw, 48vw" priority />
             <div className="hero-card"><strong>Einfach vorbeikommen</strong><span>Gäste sind herzlich willkommen.</span></div>
           </div>
         </section>
@@ -175,8 +175,8 @@ export default function Home() {
             </dl>
           </div>
           <figure className="story-image">
-            <Image src="/clubhaus.jpg" alt="Das Clubhaus der Freizeitstätte Lübars am Vierrutenberg" fill sizes="(max-width: 850px) 100vw, 48vw" />
-            <figcaption>Unser Treffpunkt am Vierrutenberg</figcaption>
+            <Image src="/kaffee-kuchen.jpg" alt="Heißgetränk mit Sahne und Gebäck auf einem Cafétisch" fill sizes="(max-width: 850px) 100vw, 48vw" />
+            <figcaption>Kaffee und Kuchen in gemütlicher Runde</figcaption>
           </figure>
         </section>
 
