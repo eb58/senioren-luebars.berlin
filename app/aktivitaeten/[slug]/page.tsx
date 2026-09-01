@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import SiteHeader from '@/components/site-header';
@@ -14,8 +15,8 @@ export const generateMetadata = async ({ params }: ActivityPageProps): Promise<M
   return {
     title: `${activity.title} | Freizeitstätte Lübars`,
     description: activity.summary,
-    openGraph: { title: `${activity.title} | Freizeitstätte Lübars`, description: activity.summary, images: [] },
-    twitter: { title: `${activity.title} | Freizeitstätte Lübars`, description: activity.summary, images: [] },
+    openGraph: { title: `${activity.title} | Freizeitstätte Lübars`, description: activity.summary, images: [{ url: `/activities/${activity.slug}.jpg`, alt: activity.imageAlt }] },
+    twitter: { title: `${activity.title} | Freizeitstätte Lübars`, description: activity.summary, images: [`/activities/${activity.slug}.jpg`] },
   };
 };
 
@@ -41,7 +42,10 @@ const ActivityPage = async ({ params }: ActivityPageProps) => {
             <h1>{activity.title}</h1>
             <p>{activity.intro}</p>
           </div>
-          <span className={`detail-mark ${activity.tone}`} aria-hidden="true">{activity.icon}</span>
+          <div className="detail-image">
+            <Image src={`/activities/${activity.slug}.jpg`} alt={activity.imageAlt} fill sizes="(max-width: 850px) 100vw, 42vw" priority />
+            <span className={`detail-image-mark ${activity.tone}`} aria-hidden="true">{activity.icon}</span>
+          </div>
         </section>
         <section className="detail-content">
           <div className="detail-copy">

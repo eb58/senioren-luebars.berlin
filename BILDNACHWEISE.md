@@ -21,3 +21,23 @@
 - Quelle: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Delicious_coffee_and_pastries_on_a_wooden_table_in_a_cozy_cafe_setting_during_a_sunny_morning.jpg)
 - Lizenz: [Creative Commons Namensnennung 2.0 (CC BY 2.0)](https://creativecommons.org/licenses/by/2.0/deed.de)
 - Bearbeitung: von Wikimedia bereitgestellte, verkleinerte Fassung; Darstellung auf der Website mit bildschirmabhängigem Beschnitt
+
+## Aktivitätsbilder (`public/activities/`)
+
+| Aktivität | Motiv | Urheber | Quelle | Lizenz |
+| --- | --- | --- | --- | --- |
+| Kreativ (`kreativ.jpg`) | Stickarbeit im Stickrahmen | Shixart1985 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Embroidered_fabric_rests_on_a_wooden_table_with_tools_beside_it_during_a_craft_session_in_a_sunny_outdoor_setting.jpg) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.de) |
+| Kartenspiel (`kartenspiel.jpg`) | Ältere Menschen beim Kartenspiel | Pedro Ribeiro Simões | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Retired_people_playing_cards_(16429902514).jpg) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.de) |
+| Gymnastik (`gymnastik.jpg`) | Gymnastikgruppe im Seniorenzentrum | Bill Branson | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aerobics_class.jpg) | [Public Domain](https://creativecommons.org/publicdomain/mark/1.0/deed.de) |
+| Tischtennis (`tischtennis.jpg`) | Älterer Tischtennisspieler | Mel496 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mel496_at_Westchester_Table_Tennis_Club.jpg) | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.de) |
+| Englisch (`englisch.jpg`) | Ältere Erwachsene in einer Gesprächsrunde | Harless Todd, U.S. Fish and Wildlife Service | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:People_seated_at_table_participating_in_group_discussion_during_meeting.jpg) | [Public Domain](https://creativecommons.org/publicdomain/mark/1.0/deed.de) |
+| Schach (`schach.jpg`) | Schachpartie im Central Park, 1946 | U.S. National Archives, Urheber unbekannt | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Two_oldtimers_playing_chess_on_a_Central_Park_bench_in_New_York_City,_05-1946_-_NARA_-_541889.jpg) | [Public Domain](https://creativecommons.org/publicdomain/mark/1.0/deed.de) |
+| PC im Alltag (`pc-im-alltag.jpg`) | Ältere Frau mit Laptop | Shixart1985 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Elderly_woman_with_a_laptop_on_her_lap_talking_on_the_phone_and_celebrating.jpg) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.de) |
+| PC Anfänger & Fortgeschrittene (`pc-anfaenger.jpg`) | Computerkurs für ältere Menschen | Elena Ancu Damian | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Workshop_in_a_library.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de) |
+| Excel (`excel.jpg`) | Laptop mit Excel-Tabelle | Europäische Kommission / Christophe Licoppe | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Teleworking_-_P060782-39376.jpg) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de) |
+| Smartphone & Tablet (`smartphone.jpg`) | Seniorengerechtes Smartphone | JamesDawn | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Senioren_smartphone.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de) |
+| Videogruppe (`videogruppe.jpg`) | Arbeitsplatz für den Videoschnitt | Marcel Oosterwijk | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Film_editing_workstation.jpg) | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.de) |
+| Wandern (`wandern.jpg`) | Wandergruppe auf einem Waldweg | Lizzy Shaanan (ליזי שאנן) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:142140_ramim_ridge_-_hiking_group_PikiWiki_Israel.jpg) | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/deed.de) |
+| Fahrradtouren (`fahrradtouren.jpg`) | Radfahrer am Botanischen Volkspark Blankenfelde-Pankow | nicht angegeben | Vom Nutzer bereitgestellt | nicht angegeben |
+
+Bearbeitung: Die Wikimedia-Bilder sind auf maximal 1600 Pixel Breite skaliert. Das Bild der Fahrradtour wurde unverändert übernommen. Darstellung auf der Website jeweils mit bildschirmabhängigem Beschnitt.
