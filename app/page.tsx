@@ -110,13 +110,18 @@ export default function Home() {
         <section className="section activities" id="aktivitaeten">
           <SectionIntro label="Vielseitig & gesellig" title="Für jeden ist etwas dabei." text="Bewegung, Technik, Kreativität oder einfach gute Gespräche – unsere Gruppen freuen sich über bekannte und neue Gesichter." />
           <div className="activity-grid">
-            {activities.map(({ slug, icon, title, summary, tone, category }) => (
+            {activities.map(({ slug, icon, title, imageAlt, summary, tone, category }) => (
               <Link className="activity-card" href={`/aktivitaeten/${slug}`} key={slug}>
-                <span className={`activity-mark ${tone}`} aria-hidden="true">{icon}</span>
-                <small className="activity-category">{category}</small>
-                <h3>{title}</h3>
-                <p>{summary}</p>
-                <span className="activity-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+                <span className="activity-card-image">
+                  <Image src={`/activities/${slug}.jpg`} alt={imageAlt} fill sizes="(max-width: 520px) 100vw, (max-width: 850px) 50vw, 33vw" />
+                  <span className={`activity-mark ${tone}`} aria-hidden="true">{icon}</span>
+                </span>
+                <div className="activity-card-copy">
+                  <small className="activity-category">{category}</small>
+                  <h3>{title}</h3>
+                  <p>{summary}</p>
+                  <span className="activity-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+                </div>
               </Link>
             ))}
           </div>

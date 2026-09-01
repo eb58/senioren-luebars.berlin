@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import SiteHeader from '@/components/site-header';
 import { activities } from './data';
@@ -23,13 +24,18 @@ const ActivitiesPage = () => (
         <p>Wählen Sie eine Gruppe aus, um Termine und weitere Informationen zu sehen.</p>
       </div>
       <div className="activity-grid all-activities">
-        {activities.map(({ slug, icon, title, summary, tone, category }) => (
+        {activities.map(({ slug, icon, title, imageAlt, summary, tone, category }) => (
           <Link className="activity-card" href={`/aktivitaeten/${slug}`} key={slug}>
-            <span className={`activity-mark ${tone}`} aria-hidden="true">{icon}</span>
-            <small className="activity-category">{category}</small>
-            <h2>{title}</h2>
-            <p>{summary}</p>
-            <span className="activity-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+            <span className="activity-card-image">
+              <Image src={`/activities/${slug}.jpg`} alt={imageAlt} fill sizes="(max-width: 520px) 100vw, (max-width: 850px) 50vw, 33vw" />
+              <span className={`activity-mark ${tone}`} aria-hidden="true">{icon}</span>
+            </span>
+            <div className="activity-card-copy">
+              <small className="activity-category">{category}</small>
+              <h2>{title}</h2>
+              <p>{summary}</p>
+              <span className="activity-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+            </div>
           </Link>
         ))}
       </div>
