@@ -36,8 +36,7 @@ Danach ist die Vorschau unter http://localhost:3000 erreichbar.
 - `app/globals.css` – Gestaltung und responsive Layouts
 - `public/` – Bilder, Logo und PDF-Dokumente
 - `BILDNACHWEISE.md` – Quellen und Lizenzen der verwendeten Stockbilder
-- `scripts/deploy.ps1` – Veröffentlichung nach `Seniorenclub/website` auf STRATO
-- `server/htaccess-webroot.txt` – Vorlage der gemeinsamen `.htaccess` im Webroot
+- `deploy.ps1` – Veröffentlichung nach `Seniorenclub/website` auf STRATO
 
 Vor einer Veröffentlichung:
 
@@ -45,18 +44,6 @@ Vor einer Veröffentlichung:
 npm run lint
 npm run build
 ```
-
-Wer laufend am fertigen Upload-Ordner arbeitet, kann den Build automatisch
-wiederholen lassen:
-
-```bash
-npm run watch
-```
-
-Der Befehl baut einmal komplett und danach bei jeder Änderung in `app/`,
-`public/`, `scripts/` oder den Konfigurationsdateien erneut nach `dist/client`.
-Beenden mit `Strg+C`. Für die tägliche Arbeit am Inhalt bleibt `npm run dev`
-die schnellere Wahl.
 
 ## Auf STRATO veröffentlichen
 
@@ -66,5 +53,5 @@ Der folgende Befehl baut die Website und lädt sie nach
 `Seniorenclub/website` hoch:
 
 ```bash
-npm run deploy
+powershell -NoProfile -ExecutionPolicy Bypass -File deploy.ps1
 ```

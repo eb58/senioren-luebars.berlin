@@ -7,17 +7,15 @@ param(
     [switch] $SkipBuild,
     [switch] $SkipUpload,
     [switch] $NoClean,
-    [switch] $UploadRootHtaccess,
     [switch] $CleanLegacyRoot,
     [string[]] $Keep = @("mitgliederverwaltung", "gratulationsdienst", "terminfinder", ".htaccess", ".well-known", "logs", "stats")
 )
 
 $ErrorActionPreference = "Stop"
 
-$projectRoot = Split-Path -Parent $PSScriptRoot
+$projectRoot = $PSScriptRoot
 $buildDir = Join-Path $projectRoot "dist\client"
 $deployDir = Join-Path $projectRoot ".deploy"
-$htaccessTemplate = Join-Path $projectRoot "server\htaccess-webroot.txt"
 $archiveName = "senioren-luebars-site.tar.gz"
 $archive = Join-Path $deployDir $archiveName
 $sshOpt = "-o UpdateHostKeys=no"
@@ -92,15 +90,6 @@ ssh -p $Port $sshOpt "${User}@${Server}" "cd '${remoteApp}' && tar -xzf '${archi
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Entpacken fehlgeschlagen. Archiv liegt noch in ${remoteApp}/${archiveName}." -ForegroundColor Red
     exit 1
-}
-
-if ($UploadRootHtaccess) {
-    Write-Host "Aktualisiere Root-.htaccess..." -ForegroundColor Cyan
-    scp -P $Port $sshOpt $htaccessTemplate "${User}@${Server}:${Webroot}/.htaccess"
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "Root-.htaccess konnte nicht hochgeladen werden." -ForegroundColor Red
-        exit 1
-    }
 }
 
 if ($CleanLegacyRoot) {
