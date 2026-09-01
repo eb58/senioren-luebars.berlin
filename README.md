@@ -53,5 +53,5 @@ Der folgende Befehl baut die Website und lädt sie nach
 `Seniorenclub/website` hoch:
 
 ```bash
-powershell -NoProfile -ExecutionPolicy Bypass -File deploy.ps1
+.\deploy.ps1
 ```
