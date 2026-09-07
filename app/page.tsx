@@ -185,6 +185,32 @@ export default function Home() {
           </figure>
         </section>
 
+        <section className="section first-visit" id="erster-besuch">
+          <SectionIntro label="Zum ersten Mal bei uns?" title="Kommen Sie uns kennenlernen." text="Sie müssen noch niemanden kennen. Ob Sie eine Gruppe ausprobieren oder beim Clubabend ins Gespräch kommen möchten: Gäste sind herzlich willkommen." />
+          <div className="first-visit-grid">
+            <div>
+              <h3>Muss ich mich vorher anmelden?</h3>
+              <p>Zum Clubabend am Donnerstag ab 16:30 Uhr können Sie einfach vorbeikommen. Wenn Sie eine bestimmte Gruppe kennenlernen möchten, rufen Sie uns am besten vorher kurz an.</p>
+            </div>
+            <div>
+              <h3>Kann ich auch allein kommen?</h3>
+              <p>Natürlich. Kommen Sie gern allein und lernen Sie die anderen in Ruhe kennen. Sie brauchen niemanden mitzubringen.</p>
+            </div>
+            <div>
+              <h3>An wen wende ich mich vor Ort?</h3>
+              <p>Sagen Sie bei Ihrer Ankunft einfach, dass Sie zum ersten Mal da sind. Wir helfen Ihnen, die passende Gruppe und Ihre Ansprechperson zu finden.</p>
+            </div>
+            <div>
+              <h3>Was kostet das Kennenlernen?</h3>
+              <p>Sie können uns zunächst kostenlos und unverbindlich kennenlernen. Wenn es Ihnen bei uns gefällt, erfahren Sie auf der Seite „Mitglied werden“ alles zu den Beiträgen.</p>
+            </div>
+          </div>
+          <div className="first-visit-actions">
+            <a className="button button-primary" href="tel:+49304024485">Anrufen: (030) 402 44 85 <Arrow /></a>
+            <Link className="button button-ghost" href="/mitglied-werden">Mehr zur Mitgliedschaft <Arrow /></Link>
+          </div>
+        </section>
+
         <section className="contact" id="kontakt">
           <div>
             <p className="eyebrow light">Kontakt & Anfahrt</p>
