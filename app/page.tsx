@@ -115,29 +115,19 @@ export default function Home() {
             <p>Besondere Angebote und gemeinsame Unternehmungen in unserer Freizeitstätte.</p>
           </div>
           <div className="news-list">
-          <article className="trip-announcement" id="warnemuende" aria-labelledby="warnemuende-title">
-          <time className="trip-date" dateTime="2026-09-08">Dienstag<strong>8. September</strong>2026</time>
-          <div className="trip-copy">
-            <p className="eyebrow">Gemeinsam unterwegs</p>
-            <h3 id="warnemuende-title">Mit dem Bus nach Warnemünde</h3>
-            <p>Am 8. September 2026 fahren wir gemeinsam nach Warnemünde. Freuen Sie sich auf einen Ausflug an die Ostsee in guter Gesellschaft.</p>
-            <p>Informationen zu Abfahrtszeit, Kosten und Anmeldung erhalten Sie telefonisch.</p>
-          </div>
-          <a className="button button-primary" href="tel:+49304024485">Nachfragen: (030) 402 44 85 <Arrow /></a>
-          </article>
-          <article className="trip-announcement" aria-labelledby="smartphone-title">
-            <time className="trip-date" dateTime="2026-11-02">Montag<strong>2. November</strong>2026</time>
-            <div className="trip-copy">
-              <p className="eyebrow">Eine Stunde für Ihr Anliegen</p>
-              <h3 id="smartphone-title">Smartphone-Sprechstunde</h3>
-              <p>Fragen zum Smartphone? Wir nehmen uns Zeit für Sie. Gemeinsam schauen wir uns in Ruhe an, wo es hakt, und analysieren die Probleme.</p>
-              <p>Bitte buchen Sie Ihren Termin vorab – am besten direkt im Büro der Freizeitstätte oder telefonisch unter (030) 402 44 85.</p>
-            </div>
-            <div className="news-actions">
-              <a className="button button-primary" href="tel:+49304024485">Termin telefonisch buchen <Arrow /></a>
-              <a className="button button-ghost" href="/dokumente/smartphone-sprechstunde.pdf" target="_blank" rel="noreferrer">Flyer öffnen (PDF) <Arrow /></a>
-            </div>
-          </article>
+            <article className="trip-announcement" aria-labelledby="smartphone-title">
+              <time className="trip-date" dateTime="2026-11-02">Montag<strong>2. November</strong>2026</time>
+              <div className="trip-copy">
+                <p className="eyebrow">Eine Stunde für Ihr Anliegen</p>
+                <h3 id="smartphone-title">Smartphone-Sprechstunde</h3>
+                <p>Fragen zum Smartphone? Wir nehmen uns Zeit für Sie. Gemeinsam schauen wir uns in Ruhe an, wo es hakt, und analysieren die Probleme.</p>
+                <p>Bitte buchen Sie Ihren Termin vorab – am besten direkt im Büro der Freizeitstätte oder telefonisch unter (030) 402 44 85.</p>
+              </div>
+              <div className="news-actions">
+                <a className="button button-primary" href="tel:+49304024485">Termin telefonisch buchen <Arrow /></a>
+                <a className="button button-ghost" href="/dokumente/smartphone-sprechstunde.pdf" target="_blank" rel="noreferrer">Flyer öffnen (PDF) <Arrow /></a>
+              </div>
+            </article>
           </div>
         </section>
 
