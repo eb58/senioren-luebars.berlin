@@ -8,7 +8,7 @@ param(
     [switch] $SkipUpload,
     [switch] $NoClean,
     [switch] $CleanLegacyRoot,
-    [string[]] $Keep = @("mitgliederverwaltung", "gratulationsdienst", "terminfinder", ".htaccess", ".well-known", "logs", "stats")
+    [string[]] $Keep = @("mitgliederverwaltung", "gratulationsdienst", "terminfinder", "fackelkopf", ".htaccess", ".well-known", "logs", "stats")
 )
 
 $ErrorActionPreference = "Stop"

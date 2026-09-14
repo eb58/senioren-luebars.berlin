@@ -115,6 +115,19 @@ export default function Home() {
             <p>Besondere Angebote und gemeinsame Unternehmungen in unserer Freizeitstätte.</p>
           </div>
           <div className="news-list">
+            <article className="trip-announcement" aria-labelledby="boddensee-title">
+              <time className="trip-date" dateTime="2026-09-22">Dienstag<strong>22. September</strong>2026</time>
+              <div className="trip-copy">
+                <p className="eyebrow">Gemeinsam unterwegs</p>
+                <h3 id="boddensee-title">Fahrradtour zum Boddensee</h3>
+                <p>Am Dienstag, 22. September, unternehmen wir eine gemeinsame Fahrradtour zum Boddensee.</p>
+                <p>Weitere Informationen zu Treffpunkt und Uhrzeit erhalten Sie in der Freizeitstätte oder telefonisch unter (030) 402 44 85.</p>
+              </div>
+              <div className="news-actions">
+                <a className="button button-primary" href="tel:+49304024485">Weitere Informationen <Arrow /></a>
+                <Link className="button button-ghost" href="/aktivitaeten/fahrradtouren">Mehr zu den Fahrradtouren <Arrow /></Link>
+              </div>
+            </article>
             <article className="trip-announcement" aria-labelledby="smartphone-title">
               <time className="trip-date" dateTime="2026-11-02">Montag<strong>2. November</strong>2026</time>
               <div className="trip-copy">
