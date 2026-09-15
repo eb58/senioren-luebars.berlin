@@ -40,7 +40,7 @@ const SiteHeader = ({ brandHref = '/', links }: SiteHeaderProps) => {
   return (
     <header className="site-header" ref={headerRef}>
       <Link className="brand" href={brandHref} aria-label="Freizeitstätte Lübars – Startseite">
-        <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} priority />
+        <Image src="/logo-hq.jpg" alt="Freizeitstätte Lübars" width={1059} height={165} priority />
       </Link>
       <button
         className={open ? 'menu-toggle is-open' : 'menu-toggle'}
