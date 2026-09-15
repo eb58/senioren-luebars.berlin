@@ -115,6 +115,19 @@ export default function Home() {
             <p>Besondere Angebote und gemeinsame Unternehmungen in unserer Freizeitstätte.</p>
           </div>
           <div className="news-list">
+            <article className="trip-announcement trip-recap" aria-labelledby="warnemuende-recap-title">
+              <div className="trip-recap-image">
+                <Image src="/ausfluege/warnemuende-2026/18.jpg" alt="Gruppenfoto beim Ausflug nach Warnemünde" fill sizes="(max-width: 850px) 260px, 190px" />
+              </div>
+              <div className="trip-copy">
+                <p className="eyebrow">Rückblick · Gemeinsam unterwegs</p>
+                <h3 id="warnemuende-recap-title">Unser Ausflug nach Warnemünde</h3>
+                <p>Am 8. September waren wir mit dem Bus an der Ostsee unterwegs. Lesen Sie den Bericht und sehen Sie alle Fotos vom Tag.</p>
+              </div>
+              <div className="news-actions">
+                <Link className="button button-primary" href="/ausfluege/warnemuende">Bericht & Fotos ansehen <Arrow /></Link>
+              </div>
+            </article>
             <article className="trip-announcement" aria-labelledby="boddensee-title">
               <time className="trip-date" dateTime="2026-09-22">Dienstag<strong>22. September</strong>2026</time>
               <div className="trip-copy">
@@ -185,7 +198,7 @@ export default function Home() {
             <p className="eyebrow light">Gemeinsam unterwegs</p>
             <h2>Raus aus dem Alltag, rein ins Erlebnis.</h2>
             <p>Unsere Tagesfahrten, Wanderungen und Fahrradtouren bringen Abwechslung und neue Eindrücke – am liebsten in guter Gesellschaft.</p>
-            <a className="text-link" href="#kontakt">Nach dem nächsten Ausflug fragen <Arrow /></a>
+            <Link className="text-link" href="/ausfluege/warnemuende">Rückblick: Ausflug nach Warnemünde <Arrow /></Link>
           </div>
         </section>
 
@@ -282,7 +295,7 @@ export default function Home() {
 
       <footer>
         <div className="footer-brand">
-          <Image src="/logo.jpg" alt="Freizeitstätte Lübars" width={436} height={68} />
+          <Image src="/logo-hq.jpg" alt="Freizeitstätte Lübars" width={1059} height={165} />
           <p>Der Treffpunkt für alle ab 55 in Berlin-Lübars.</p>
         </div>
         <div><strong>Besuchen</strong><a href="#aktivitaeten">Aktivitäten</a><a href="#wochenplan">Wochenplan</a><a href="#ueber-uns">Über uns</a><Link href="/dokumente">Dokumente</Link></div>
