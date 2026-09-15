@@ -120,12 +120,24 @@ export default function Home() {
               <div className="trip-copy">
                 <p className="eyebrow">Gemeinsam unterwegs</p>
                 <h3 id="boddensee-title">Fahrradtour zum Boddensee</h3>
-                <p>Am Dienstag, 22. September, unternehmen wir eine gemeinsame Fahrradtour zum Boddensee.</p>
-                <p>Weitere Informationen zu Treffpunkt und Uhrzeit erhalten Sie in der Freizeitstätte oder telefonisch unter (030) 402 44 85.</p>
+                <p>Am Dienstag, 22. September, um 10:00 Uhr unternehmen wir eine gemeinsame Fahrradtour zum Boddensee.</p>
+                <p>Weitere Informationen zum Treffpunkt erhalten Sie in der Freizeitstätte oder telefonisch unter (030) 402 44 85.</p>
               </div>
               <div className="news-actions">
                 <a className="button button-primary" href="tel:+49304024485">Weitere Informationen <Arrow /></a>
                 <Link className="button button-ghost" href="/aktivitaeten/fahrradtouren">Mehr zu den Fahrradtouren <Arrow /></Link>
+              </div>
+            </article>
+            <article className="trip-announcement" aria-labelledby="eisbeinessen-title">
+              <time className="trip-date" dateTime="2026-10-14T16:00">Mittwoch<strong>14. Oktober</strong>2026</time>
+              <div className="trip-copy">
+                <p className="eyebrow">Gemeinsam genießen</p>
+                <h3 id="eisbeinessen-title">Eisbeinessen in der Freizeitstätte</h3>
+                <p>Am Mittwoch, 14. Oktober, um 16:00 Uhr laden wir zum gemeinsamen Eisbeinessen ein.</p>
+                <p>Mischke aus Pankow liefert uns das Essen.</p>
+              </div>
+              <div className="news-actions">
+                <a className="button button-primary" href="tel:+49304024485">Weitere Informationen <Arrow /></a>
               </div>
             </article>
             <article className="trip-announcement" aria-labelledby="smartphone-title">
