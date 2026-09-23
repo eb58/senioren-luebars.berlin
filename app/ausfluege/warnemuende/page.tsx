@@ -31,6 +31,10 @@ const photos = [
   { file: '19.jpg', alt: 'Auf dem Weg zum Leuchtturm' },
   { file: '20.jpg', alt: 'Der Leuchtturm von Warnemünde' },
   { file: '21.jpg', alt: 'Das Teepott-Gebäude am Strand von Warnemünde' },
+  { file: '22.jpg', alt: 'Die Kirchenstraße mit Geschäften und Passanten' },
+  { file: '23.jpg', alt: 'Die Gruppe hört einer Erzählung während des Stadtrundgangs zu' },
+  { file: '24.jpg', alt: 'Blick vom Hotel Neptun auf die Strandpromenade und den Leuchtturm' },
+  { file: '25.jpg', alt: 'Blick vom Hotel Neptun auf Strand und Ostsee' },
 ];
 
 const WarnemuendePage = () => (
