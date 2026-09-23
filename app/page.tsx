@@ -46,7 +46,7 @@ const schedule = [
     events: [
       ['10:00–12:00', 'Computer: Grundlagen'],
       ['13:30–17:00', 'Wandergruppe (außen)'],
-      ['14:30–18:00', 'Schach'],
+      ['14:30–17:30', 'Schach'],
     ],
   },
   {
