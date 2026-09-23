@@ -100,7 +100,7 @@ export const activities: Activity[] = [
     intro: 'Schach ist eines der komplexesten Brettspiele und ein ideales Training für Gedächtnis, Konzentration und räumliches Vorstellungsvermögen.',
     details: ['Freitags wird mit Eifer um den Sieg gerungen – aber eine schöne Partie und der Spaß am Spiel sind wichtiger als das Ergebnis.', 'Nach einer Partie folgt oft eine kurze gemeinsame Analyse. Kaffee, Gebäck und der gemütliche Teil kommen ebenfalls nicht zu kurz. Etwas Spielerfahrung ist hilfreich.'],
     topics: ['Partien untereinander', 'Gemeinsame Spielanalyse', 'Training für Konzentration und Gedächtnis'],
-    meeting: [['Freitag', '14:30–18:00 Uhr']],
+    meeting: [['Freitag', '14:30–17:30 Uhr']],
     leader: 'E. Brandl',
     tone: 'gold',
     category: 'Spiel & Begegnung',
