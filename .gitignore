@@ -1,14 +1,7 @@
-# dependencies
-/node_modules/
-
 # generated files
-/.next/
-/.vinext/
+/node_modules/
 /dist/
 /.deploy/
-/.wrangler/
-next-env.d.ts
-*.tsbuildinfo
 
 # local files and secrets
 .env*

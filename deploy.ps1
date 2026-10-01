@@ -32,6 +32,11 @@ if (-not $SkipBuild) {
             Write-Host "Build fehlgeschlagen." -ForegroundColor Red
             exit 1
         }
+        npm.cmd test
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "Website-Pruefung fehlgeschlagen." -ForegroundColor Red
+            exit 1
+        }
     } finally {
         Pop-Location
     }
