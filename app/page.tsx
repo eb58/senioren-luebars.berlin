@@ -133,7 +133,7 @@ export default function Home() {
               <div className="trip-copy">
                 <p className="eyebrow">Gemeinsam genießen</p>
                 <h3 id="eisbeinessen-title">Eisbeinessen in der Freizeitstätte</h3>
-                <p>Am Mittwoch, 14. Oktober, um 16:00 Uhr laden wir zum gemeinsamen Eisbeinessen ein.</p>
+                <p>Am Mittwoch, 14. Oktober, um 16:00 Uhr machen wir ein Eisbeinessen. Manche nennen es auch unser Oktoberfest.</p>
                 <p>Mischke aus Pankow liefert uns das Essen.</p>
               </div>
               <div className="news-actions">
