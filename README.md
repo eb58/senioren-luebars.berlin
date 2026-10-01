@@ -1,49 +1,44 @@
 # Freizeitstätte Lübars
 
-Die Website der Freizeitstätte Lübars als Next-/Vinext-Projekt.
+Die Website wird als klassische statische Website aus HTML, CSS und wenig JavaScript erzeugt.
 
 ## Veröffentlichte Website
 
 Die Website ist erreichbar unter:
 [senioren-luebars.berlin](https://senioren-luebars.berlin)
 
-## In VS Code öffnen
+## Voraussetzungen
 
-Öffne in VS Code genau diesen Ordner:
-
-`C:\Users\erich\Projects\senioren-luebars.berlin`
-
-Voraussetzung ist Node.js 22.13 oder neuer.
+Benötigt wird Node.js 22.13 oder neuer. Externe npm-Pakete gibt es nicht.
 
 ## Lokal starten
 
-Im integrierten Terminal:
-
 ```bash
-npm install
 npm run dev
 ```
 
 Danach ist die Vorschau unter http://localhost:3000 erreichbar.
 
+## Build und Prüfung
+
+```bash
+npm run build
+npm test
+```
+
+Der Build erzeugt 21 HTML-Seiten in `dist/client`. Der Test kontrolliert die
+Anzahl der Seiten sowie alle lokalen Links, Bilder, Styles und PDF-Dateien.
+
 ## Wichtige Dateien
 
-- `app/page.tsx` – Startseite, Wochenplan und Footer
-- `app/aktivitaeten/data.ts` – alle Gruppen und deren Inhalte
-- `app/aktivitaeten/[slug]/page.tsx` – Vorlagen für Gruppen-Unterseiten
-- `app/impressum/page.tsx` – Impressum
-- `app/dokumente/page.tsx` – Dokumentenübersicht
-- `app/globals.css` – Gestaltung und responsive Layouts
+- `src/pages/*.html` – Inhalte der normalen Seiten
+- `src/data/activities.json` – Inhalte aller Aktivitätsseiten
+- `src/styles.css` – Gestaltung und responsive Layouts
+- `src/menu.js` – mobile Navigation
+- `scripts/build.mjs` – gemeinsame Seitenteile und Seitengenerator
 - `public/` – Bilder, Logo und PDF-Dokumente
 - `BILDNACHWEISE.md` – Quellen und Lizenzen der verwendeten Stockbilder
 - `deploy.ps1` – Veröffentlichung nach `Seniorenclub/website` auf STRATO
-
-Vor einer Veröffentlichung:
-
-```bash
-npm run lint
-npm run build
-```
 
 ## Auf STRATO veröffentlichen
 
