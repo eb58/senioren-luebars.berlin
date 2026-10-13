@@ -398,8 +398,12 @@
         <ul>
           <li><time>09:30–12:00</time><span>Computer: Videoschnitt</span></li>
           <li><time>11:00–16:00</time><span>Tischtennis II</span></li>
-          <li><time>12:00–14:00</time><span>Gesprächskreis Aktuelles (1. + 3. Di.)</span></li>
-          <li><time>12:30–15:30</time><span>Gesprächskreis Smartphone (2. + 4. Di.)</span></li>
+          <li data-weekday="2" data-weeks-of-month="1 3">
+            <time>12:00–14:00</time><span>Gesprächskreis Aktuelles (1. + 3. Di.)</span>
+          </li>
+          <li data-weekday="2" data-weeks-of-month="2 4">
+            <time>12:30–15:30</time><span>Gesprächskreis Smartphone (2. + 4. Di.)</span>
+          </li>
           <li><time>16:00–18:00</time><span>Computer: Linux</span></li>
         </ul>
       </article>
@@ -416,7 +420,9 @@
         <h3>Donnerstag</h3>
         <ul>
           <li><time>09:00–13:00</time><span>Tischtennis I</span></li>
-          <li><time>10:00–12:00</time><span>Computer: Publisher (2. + 4. Do.)</span></li>
+          <li data-weekday="4" data-weeks-of-month="2 4">
+            <time>10:00–12:00</time><span>Computer: Publisher (2. + 4. Do.)</span>
+          </li>
           <li><time>13:30–16:00</time><span>Kreativgruppe</span></li>
           <li><time>16:30–19:00</time><span>Clubabend</span></li>
         </ul>
@@ -432,9 +438,15 @@
       <article class="day-card">
         <h3>Samstag</h3>
         <ul>
-          <li><time>10:00–12:45</time><span>Gesprächskreis iPhone/iPad (1. Sa.)</span></li>
-          <li><time>10:00–16:00</time><span>Skatturnier (2. Sa.)</span></li>
-          <li><time>14:00–16:00</time><span>Treffen der Zeitlosen (3. Sa.)</span></li>
+          <li data-weekday="6" data-weeks-of-month="1">
+            <time>10:00–12:45</time><span>Gesprächskreis iPhone/iPad (1. Sa.)</span>
+          </li>
+          <li data-weekday="6" data-weeks-of-month="2">
+            <time>10:00–16:00</time><span>Skatturnier (2. Sa.)</span>
+          </li>
+          <li data-weekday="6" data-weeks-of-month="3">
+            <time>14:00–16:00</time><span>Treffen der Zeitlosen (3. Sa.)</span>
+          </li>
         </ul>
       </article>
     </div>

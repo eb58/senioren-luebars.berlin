@@ -28,6 +28,10 @@ for (const file of htmlFiles) {
   }
 }
 
+const home = await readFile(join(root, 'index.html'), 'utf8');
+if (!home.includes('data-weeks-of-month="1 3"')) failures.push('index.html: Terminrhythmen fehlen');
+if (!home.includes('/website/schedule.js')) failures.push('index.html: Wochenmarkierung fehlt');
+
 if (htmlFiles.length !== 21) failures.push(`Erwartet: 21 HTML-Seiten, gefunden: ${htmlFiles.length}`);
 if (failures.length) throw new Error(failures.join('\n'));
 console.log(`Geprüft: ${htmlFiles.length} HTML-Seiten, alle lokalen Links und Assets vorhanden.`);

@@ -609,6 +609,30 @@ h2 {
   font-weight: 700;
   white-space: nowrap;
 }
+
+.day-card li.is-this-week {
+  position: relative;
+  margin: -0.35rem -0.55rem;
+  padding: 0.55rem;
+  background: #fff1e9;
+  border: 1px solid rgba(193, 77, 44, 0.25);
+  border-radius: 8px;
+}
+
+.schedule-current-badge {
+  display: block;
+  width: max-content;
+  margin-top: 0.3rem;
+  padding: 0.15rem 0.45rem;
+  background: var(--coral);
+  color: white;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 900;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
 .club-callout {
   display: grid;
   grid-template-columns: auto 1fr auto;

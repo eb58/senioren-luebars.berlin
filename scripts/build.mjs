@@ -57,7 +57,7 @@ const document = ({ title, description, body, image = '/og.png' }) => rewritePub
 <title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}">
 <meta property="og:type" content="website"><meta property="og:locale" content="de_DE"><meta property="og:site_name" content="Freizeitstätte Lübars">
 <meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:image" content="https://senioren-luebars.berlin${publicUrl(image)}">
-<meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/styles.css"><script src="/menu.js" defer></script>
+<meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/styles.css"><script src="/menu.js" defer></script><script src="/schedule.js" defer></script>
 </head><body>${body}</body></html>`);
 
 const activityOverview = () => `<main id="main" class="activity-overview">
@@ -135,6 +135,7 @@ const build = async () => {
   await cp(resolve(root, 'public'), output, { recursive: true });
   await cp(resolve(root, 'src/styles.css'), resolve(output, 'styles.css'));
   await cp(resolve(root, 'src/menu.js'), resolve(output, 'menu.js'));
+  await cp(resolve(root, 'src/schedule.js'), resolve(output, 'schedule.js'));
 
   for (const page of pages) {
     const main = await read(`src/pages/${page.source}.html`);
