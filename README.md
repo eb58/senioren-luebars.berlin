@@ -36,7 +36,11 @@ Anzahl der Seiten sowie alle lokalen Links, Bilder, Styles und PDF-Dateien.
 - `src/styles.css` – Gestaltung und responsive Layouts
 - `src/menu.js` – mobile Navigation
 - `scripts/build.mjs` – gemeinsame Seitenteile und Seitengenerator
-- `public/` – Bilder, Logo und PDF-Dokumente
+- `public/bilder/` – allgemeine Bilder, Logos und Vorschaubild
+- `public/activities/` – Bilder der Aktivitäten
+- `public/fotos/` – Fotogalerien der Ausflüge
+- `public/dokumente/` – PDF-Dokumente
+- `public/favicon.ico` – Website-Symbol
 - `BILDNACHWEISE.md` – Quellen und Lizenzen der verwendeten Stockbilder
 - `deploy.ps1` – Veröffentlichung nach `Seniorenclub/website` auf STRATO
 

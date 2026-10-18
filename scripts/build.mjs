@@ -43,16 +43,16 @@ const defaultLinks = [
 
 const header = (links = defaultLinks, brandHref = '/') => `
 <header class="site-header">
-  <a class="brand" href="${brandHref}" aria-label="Freizeitstätte Lübars – Startseite"><img src="/logo-hq.jpg" alt="Freizeitstätte Lübars" width="1059" height="165"></a>
+  <a class="brand" href="${brandHref}" aria-label="Freizeitstätte Lübars – Startseite"><img src="/bilder/logo-hq.jpg" alt="Freizeitstätte Lübars" width="1059" height="165"></a>
   <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-navigation"><span class="menu-toggle-bar"></span><span class="menu-toggle-bar"></span><span class="menu-toggle-bar"></span></button>
   <nav class="main-navigation" id="main-navigation" aria-label="Hauptnavigation">${links.map(([href, label, contact]) => `<a${contact ? ' class="nav-contact"' : ''} href="${href}">${label}</a>`).join('')}</nav>
 </header>`;
 const subpageFooter = () =>
   '<footer class="subpage-footer"><span>© 2026 Freizeitstätte Lübars</span><span><a href="/dokumente">Dokumente</a> · <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a> · <a href="/">Zur Startseite</a></span></footer>';
 const homeFooter = () =>
-  `<footer><div class="footer-brand"><img src="/logo-hq.jpg" alt="Freizeitstätte Lübars" width="1059" height="165"><p>Der Treffpunkt für alle ab 55 in Berlin-Lübars.</p></div><div><strong>Besuchen</strong><a href="#aktivitaeten">Aktivitäten</a><a href="#wochenplan">Wochenplan</a><a href="#ueber-uns">Über uns</a><a href="/dokumente">Dokumente</a></div><div><strong>Kontakt</strong><a href="/mitglied-werden">Mitglied werden</a><a href="tel:+49304024485">(030) 402 44 85</a><a href="mailto:vorstand@senioren-luebars.berlin">E-Mail schreiben</a><a href="/impressum">Impressum</a></div><div class="footer-bottom"><span>© 2026 Freizeitstätte Lübars</span><a href="/datenschutz">Datenschutz</a></div></footer>`;
+  `<footer><div class="footer-brand"><img src="/bilder/logo-hq.jpg" alt="Freizeitstätte Lübars" width="1059" height="165"><p>Der Treffpunkt für alle ab 55 in Berlin-Lübars.</p></div><div><strong>Besuchen</strong><a href="#aktivitaeten">Aktivitäten</a><a href="#wochenplan">Wochenplan</a><a href="#ueber-uns">Über uns</a><a href="/dokumente">Dokumente</a></div><div><strong>Kontakt</strong><a href="/mitglied-werden">Mitglied werden</a><a href="tel:+49304024485">(030) 402 44 85</a><a href="mailto:vorstand@senioren-luebars.berlin">E-Mail schreiben</a><a href="/impressum">Impressum</a></div><div class="footer-bottom"><span>© 2026 Freizeitstätte Lübars</span><a href="/datenschutz">Datenschutz</a></div></footer>`;
 
-const document = ({ title, description, body, image = '/og.png' }) => rewritePublicUrls(`<!doctype html>
+const document = ({ title, description, body, image = '/bilder/og.png' }) => rewritePublicUrls(`<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}">
 <meta property="og:type" content="website"><meta property="og:locale" content="de_DE"><meta property="og:site_name" content="Freizeitstätte Lübars">

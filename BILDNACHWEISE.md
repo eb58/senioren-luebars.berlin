@@ -1,12 +1,12 @@
 # Bildnachweise
 
-## Freizeitstätte Lübars (`public/clubhaus.jpg`)
+## Freizeitstätte Lübars (`public/bilder/clubhaus.jpg`)
 
 - Motiv: Freizeitstätte Lübars am Vierrutenberg
 - Quelle: [Bezirksamt Reinickendorf von Berlin](https://www.berlin.de/imgscale4/r4zu3/ba-reinickendorf/service/einrichtungen/seniorenfreizeitstaetten/maxsize_219e098f5cda32259c6e86bf96c5716e_sfs_lubars.jpg)
 - Bearbeitung: grüner Schmuckrahmen entfernt und verdeckte Randbereiche bildlich ergänzt
 
-## Reisebus (`public/bus.jpg`)
+## Reisebus (`public/bilder/bus.jpg`)
 
 - Motiv: _Mercedes-Benz Tourismo, Berlin (20180910 131307).jpg_
 - Urheber: Matti Blume
@@ -14,7 +14,7 @@
 - Lizenz: [Creative Commons Namensnennung – Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 - Bearbeitung: von Wikimedia bereitgestellte, verkleinerte Fassung; Darstellung auf der Website mit bildschirmabhängigem Beschnitt
 
-## Kaffee und Gebäck (`public/kaffee-kuchen.jpg`)
+## Kaffee und Gebäck (`public/bilder/kaffee-kuchen.jpg`)
 
 - Motiv: _Delicious coffee and pastries on a wooden table in a cozy cafe setting during a sunny morning.jpg_
 - Urheber: Shixart1985
