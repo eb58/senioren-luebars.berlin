@@ -124,7 +124,7 @@ const pages = [
     source: 'tripWarnemuende',
     title: 'Ausflug nach Warnemünde | Freizeitstätte Lübars',
     description: 'Bericht und Fotos vom gemeinsamen Busausflug nach Warnemünde am 8. September 2026.',
-    image: '/ausfluege/warnemuende-2026/01.jpg',
+    image: '/fotos/warnemuende-2026/01.jpg',
     footer: subpageFooter,
   },
 ];
