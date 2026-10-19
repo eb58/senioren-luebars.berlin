@@ -39,7 +39,8 @@
 | Aktivität                                           | Motiv                                                  | Urheber                                      | Quelle                                                                                                                                                                             | Lizenz                                                                     |
 | --------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | Kreativ (`kreativ.jpg`)                             | Stickarbeit im Stickrahmen                             | Shixart1985                                  | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Embroidered_fabric_rests_on_a_wooden_table_with_tools_beside_it_during_a_craft_session_in_a_sunny_outdoor_setting.jpg) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.de)           |
-| Kartenspiel (`kartenspiel.jpg`)                     | Senioren beim Kartenspiel im Freien                    | Kampus Production                            | [Pexels](https://www.pexels.com/photo/people-playing-cards-on-the-table-6838598/)                                                                                                  | [Pexels-Lizenz](https://www.pexels.com/license/)                           |
+| Kartenspiel (`kartenspiel.jpg`) | Vier Herren beim gemeinsamen Skat in der Freizeitstätte Lübars | nicht angegeben | Vom Nutzer bereitgestellt | nicht angegeben |
+| Kartenspiel (`kartenspiel-damen.jpg`) | Damen beim Kartenspiel in geselliger Runde in der Freizeitstätte Lübars | nicht angegeben | Vom Nutzer bereitgestellt | nicht angegeben |
 | Gymnastik (`gymnastik.jpg`) | Gymnastikgruppe bei einer Übung mit einem Luftballon im Sitzen | nicht angegeben | Vom Nutzer bereitgestellt | nicht angegeben |
 | Tischtennis (`tischtennis.jpg`) | Vier Mitglieder der Tischtennisgruppe beim Doppel in der Freizeitstätte Lübars | nicht angegeben | Vom Nutzer bereitgestellt | nicht angegeben |
 | Englisch (`englisch.jpg`)                           | Ältere Erwachsene in einer Gesprächsrunde              | Harless Todd, U.S. Fish and Wildlife Service | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:People_seated_at_table_participating_in_group_discussion_during_meeting.jpg)                                           | [Public Domain](https://creativecommons.org/publicdomain/mark/1.0/deed.de) |
@@ -52,10 +53,12 @@
 | Wandern (`wandern.jpg`)                             | Wandergruppe auf einem Waldweg                         | Lizzy Shaanan (ליזי שאנן)                    | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:142140_ramim_ridge_-_hiking_group_PikiWiki_Israel.jpg)                                                                 | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/deed.de)           |
 | Fahrradtouren (`fahrradtouren.jpg`)                 | Radfahrer am Botanischen Volkspark Blankenfelde-Pankow | nicht angegeben                              | Vom Nutzer bereitgestellt                                                                                                                                                          | nicht angegeben                                                            |
 
-Die drei Pexels-Aufnahmen in diesem Abschnitt sind echte Fotografien und keine generativ erzeugten KI-Bilder. Für die Pexels-Bilder ist keine Namensnennung erforderlich; sie wird hier der Transparenz halber dennoch geführt.
+Die zwei Pexels-Aufnahmen in diesem Abschnitt sind echte Fotografien und keine generativ erzeugten KI-Bilder. Für die Pexels-Bilder ist keine Namensnennung erforderlich; sie wird hier der Transparenz halber dennoch geführt.
 
 Bearbeitung: Die Wikimedia- und Pexels-Bilder sind auf maximal 1600 Pixel Breite skaliert. Das Bild der Fahrradtour wurde unverändert übernommen. Darstellung auf der Website jeweils mit bildschirmabhängigem Beschnitt.
 
 Das Foto der Tischtennisgruppe wurde auf 1600 × 900 Pixel verkleinert und als JPEG komprimiert.
 
 Das Foto der Gymnastikgruppe wurde auf 1600 × 900 Pixel verkleinert und als JPEG komprimiert.
+
+Das Foto der Kartenspielgruppe wurde auf 1600 × 900 Pixel verkleinert und als JPEG komprimiert.

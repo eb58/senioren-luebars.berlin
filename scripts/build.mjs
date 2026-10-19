@@ -60,13 +60,14 @@ const document = ({ title, description, body, image = '/bilder/og.png' }) => rew
 <meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/styles.css"><script src="/menu.js" defer></script><script src="/schedule.js" defer></script>
 </head><body>${body}</body></html>`);
 
+const activityImage = activity => activity.image ?? `/activities/${activity.slug}.jpg`;
 const activityOverview = () => `<main id="main" class="activity-overview">
   <div class="subpage-title"><a class="back-link" href="/"><span aria-hidden="true">←</span> Zur Startseite</a><p class="eyebrow">Unser Programm</p><h1>Alle Aktivitäten</h1><p>Entdecken Sie unsere Gruppen und finden Sie das Angebot, das zu Ihnen passt.</p></div>
   <div class="activity-grid all-activities">${activities
     .map(
       activity => `
     <a class="activity-card" href="/aktivitaeten/${activity.slug}">
-      <div class="activity-card-image"><img src="/activities/${activity.slug}.jpg" alt="${escapeHtml(activity.imageAlt)}" loading="lazy"><span class="activity-mark ${activity.tone}" aria-hidden="true">${activity.icon}</span></div>
+      <div class="activity-card-image"><img src="${activityImage(activity)}" alt="${escapeHtml(activity.imageAlt)}" loading="lazy"><span class="activity-mark ${activity.tone}" aria-hidden="true">${activity.icon}</span></div>
       <div class="activity-card-copy"><span>${escapeHtml(activity.category)}</span><h2>${escapeHtml(activity.title)}</h2><p>${escapeHtml(activity.summary)}</p><strong>Mehr erfahren ${arrow}</strong></div>
     </a>`,
     )
@@ -167,7 +168,7 @@ const build = async () => {
       document({
         title: `${activity.title} | Freizeitstätte Lübars`,
         description: activity.summary,
-        image: `/activities/${activity.slug}.jpg`,
+        image: activityImage(activity),
         body,
       }),
     );
@@ -188,10 +189,10 @@ const build = async () => {
 const activityDetail = (activity, next) => `<main id="main" class="activity-detail activity-${activity.slug}">
   <section class="detail-hero detail-${activity.tone}">
     <div><a class="back-link" href="/aktivitaeten"><span aria-hidden="true">←</span> Alle Aktivitäten</a><p class="eyebrow">${escapeHtml(activity.category)}</p><h1>${escapeHtml(activity.title)}</h1><p>${escapeHtml(activity.intro)}</p></div>
-    <div class="detail-image"><img src="/activities/${activity.slug}.jpg" alt="${escapeHtml(activity.imageAlt)}"><span class="detail-image-mark ${activity.tone}" aria-hidden="true">${activity.icon}</span></div>
+    <div class="detail-image"><img src="${activityImage(activity)}" alt="${escapeHtml(activity.imageAlt)}"><span class="detail-image-mark ${activity.tone}" aria-hidden="true">${activity.icon}</span></div>
   </section>
   <section class="detail-content">
-    <div class="detail-copy"><p class="eyebrow">Über die Gruppe</p><h2>Gemeinsam macht es mehr Freude.</h2>${activity.details.map(text => `<p>${escapeHtml(text)}</p>`).join('')}<h3>Das erwartet Sie</h3><ul class="topic-list">${activity.topics.map(topic => `<li>${escapeHtml(topic)}</li>`).join('')}</ul></div>
+    <div class="detail-copy"><p class="eyebrow">Über die Gruppe</p><h2>Gemeinsam macht es mehr Freude.</h2>${activity.details.map(text => `<p>${escapeHtml(text)}</p>`).join('')}<h3>Das erwartet Sie</h3><ul class="topic-list">${activity.topics.map(topic => `<li>${escapeHtml(topic)}</li>`).join('')}</ul>${(activity.photos ?? []).map(photo => `<figure class="detail-photo"><img src="${photo.src}" alt="${escapeHtml(photo.alt)}" loading="lazy"></figure>`).join('')}</div>
     <aside class="meeting-card"><p class="eyebrow">Termin</p><dl class="meeting-times">${activity.meeting.map(([label, time]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(time)}</dd></div>`).join('')}</dl>${activity.leader ? `<p><span>Gruppenleitung</span><strong>${escapeHtml(activity.leader)}</strong></p>` : ''}<p><span>Ort</span><strong>Am Vierrutenberg 2<br>13469 Berlin</strong></p><a class="button button-primary" href="/#kontakt">Interesse anmelden ${arrow}</a><small>Bitte fragen Sie vor dem ersten Besuch kurz nach, ob der Termin wie geplant stattfindet.</small></aside>
   </section>
   <a class="next-activity" href="/aktivitaeten/${next.slug}"><span>Nächste Gruppe</span><strong>${escapeHtml(next.title)}</strong><span aria-hidden="true">→</span></a>

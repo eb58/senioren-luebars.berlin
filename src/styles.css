@@ -1188,12 +1188,14 @@ footer a:hover {
 }
 .activity-zeitlosen .detail-image,
 .activity-tischtennis .detail-image,
-.activity-gymnastik .detail-image {
+.activity-gymnastik .detail-image,
+.activity-kartenspiel .detail-image {
   aspect-ratio: auto;
 }
 .activity-zeitlosen .detail-image > img,
 .activity-tischtennis .detail-image > img,
-.activity-gymnastik .detail-image > img {
+.activity-gymnastik .detail-image > img,
+.activity-kartenspiel .detail-image > img {
   height: auto;
 }
 .detail-image > img {
@@ -1256,6 +1258,17 @@ footer a:hover {
 }
 .detail-copy > p {
   color: var(--muted);
+}
+.detail-photo {
+  margin: 2.5rem 0 0;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(15, 47, 54, 0.16);
+}
+.detail-photo > img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .detail-copy h3 {
   margin: 2.5rem 0 1rem;

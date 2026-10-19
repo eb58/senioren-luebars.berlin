@@ -22,7 +22,13 @@
     "short": "KA",
     "icon": "♣",
     "title": "Kartenspiel",
-    "imageAlt": "Ältere Menschen beim gemeinsamen Kartenspiel",
+    "imageAlt": "Vier Herren beim gemeinsamen Skat in der Freizeitstätte Lübars",
+    "photos": [
+      {
+        "src": "/activities/kartenspiel-damen.jpg",
+        "alt": "Damen beim Kartenspiel in geselliger Runde in der Freizeitstätte Lübars"
+      }
+    ],
     "summary": "Klassische Kartenspiele lernen und in geselliger Runde spielen.",
     "intro": "Unsere Freizeitstätte wird zur kleinen Spielhölle – natürlich nur im besten Sinne. Hier geht es um Freude am Spiel und gute Gesellschaft.",
     "details": [
