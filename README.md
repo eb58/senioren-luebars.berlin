@@ -26,7 +26,7 @@ npm run build
 npm test
 ```
 
-Der Build erzeugt 21 HTML-Seiten in `dist/client`. Der Test kontrolliert die
+Der Build erzeugt 22 HTML-Seiten in `dist/client`. Der Test kontrolliert die
 Anzahl der Seiten sowie alle lokalen Links, Bilder, Styles und PDF-Dateien.
 
 ## Wichtige Dateien

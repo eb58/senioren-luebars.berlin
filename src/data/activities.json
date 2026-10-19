@@ -36,11 +36,28 @@
     "category": "Spiel & Begegnung"
   },
   {
+    "slug": "zeitlosen",
+    "short": "ZE",
+    "icon": "☕",
+    "title": "Die Zeitlosen",
+    "imageAlt": "Die Zeitlosen bei Kaffee und Kuchen in der Freizeitstätte Lübars",
+    "summary": "Bei Kaffee und Kuchen plaudern und Zeit miteinander verbringen.",
+    "intro": "Ein gemütlicher Nachmittag in guter Gesellschaft: Die Zeitlosen kommen einmal im Monat bei Kaffee und Kuchen zusammen.",
+    "details": [
+      "Am dritten Samstag im Monat treffen sich die Zeitlosen in unserer Freizeitstätte. Im Mittelpunkt stehen Gespräche und das Beisammensein.",
+      "Wer die Runde kennenlernen möchte, kann sich vorab bei uns nach dem nächsten Treffen erkundigen."
+    ],
+    "topics": ["Kaffee und Kuchen", "Zeit für Gespräche", "Gemeinschaft in gemütlicher Runde"],
+    "meeting": [["Jeden 3. Samstag im Monat", "14:00–16:00 Uhr"]],
+    "tone": "gold",
+    "category": "Geselligkeit"
+  },
+  {
     "slug": "gymnastik",
     "short": "GY",
     "icon": "◉",
     "title": "Gymnastik",
-    "imageAlt": "Ältere Menschen bei einer gemeinsamen Gymnastikübung",
+    "imageAlt": "Die Gymnastikgruppe bei einer gemeinsamen Übung mit einem gelben Luftballon im Sitzen",
     "summary": "Mit Musik und Bewegung beweglich und sicher im Alltag bleiben.",
     "intro": "Musik und Bewegung bringen Schwung in die Woche und helfen dabei, Gelenke und Muskulatur möglichst lange beweglich zu halten.",
     "details": [
@@ -58,7 +75,7 @@
     "short": "TT",
     "icon": "●",
     "title": "Tischtennis",
-    "imageAlt": "Älterer Tischtennisspieler mit Schläger und Ball",
+    "imageAlt": "Vier Mitglieder der Tischtennisgruppe beim Doppel in der Freizeitstätte Lübars",
     "summary": "Sport, Reaktion und jede Menge Spaß mit dem kleinen Ball.",
     "intro": "Ping – Pong – Ping – Pong: Wir machen das Spiel mit dem kleinen Ball zum sportlichen Erlebnis und haben viel Spaß dabei.",
     "details": [

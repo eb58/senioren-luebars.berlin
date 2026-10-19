@@ -185,7 +185,7 @@ const build = async () => {
   console.log(`Statischer Build fertig: ${pages.length + activities.length + 2} HTML-Seiten in dist/client.`);
 };
 
-const activityDetail = (activity, next) => `<main id="main" class="activity-detail">
+const activityDetail = (activity, next) => `<main id="main" class="activity-detail activity-${activity.slug}">
   <section class="detail-hero detail-${activity.tone}">
     <div><a class="back-link" href="/aktivitaeten"><span aria-hidden="true">←</span> Alle Aktivitäten</a><p class="eyebrow">${escapeHtml(activity.category)}</p><h1>${escapeHtml(activity.title)}</h1><p>${escapeHtml(activity.intro)}</p></div>
     <div class="detail-image"><img src="/activities/${activity.slug}.jpg" alt="${escapeHtml(activity.imageAlt)}"><span class="detail-image-mark ${activity.tone}" aria-hidden="true">${activity.icon}</span></div>
