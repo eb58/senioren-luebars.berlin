@@ -1189,13 +1189,15 @@ footer a:hover {
 .activity-zeitlosen .detail-image,
 .activity-tischtennis .detail-image,
 .activity-gymnastik .detail-image,
-.activity-kartenspiel .detail-image {
+.activity-kartenspiel .detail-image,
+.activity-pc-anfaenger .detail-image {
   aspect-ratio: auto;
 }
 .activity-zeitlosen .detail-image > img,
 .activity-tischtennis .detail-image > img,
 .activity-gymnastik .detail-image > img,
-.activity-kartenspiel .detail-image > img {
+.activity-kartenspiel .detail-image > img,
+.activity-pc-anfaenger .detail-image > img {
   height: auto;
 }
 .detail-image > img {
