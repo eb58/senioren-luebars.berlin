@@ -1191,7 +1191,8 @@ footer a:hover {
 .activity-gymnastik .detail-image,
 .activity-kartenspiel .detail-image,
 .activity-pc-anfaenger .detail-image,
-.activity-englisch .detail-image {
+.activity-englisch .detail-image,
+.activity-wandern .detail-image {
   aspect-ratio: auto;
 }
 .activity-zeitlosen .detail-image > img,
@@ -1199,7 +1200,8 @@ footer a:hover {
 .activity-gymnastik .detail-image > img,
 .activity-kartenspiel .detail-image > img,
 .activity-pc-anfaenger .detail-image > img,
-.activity-englisch .detail-image > img {
+.activity-englisch .detail-image > img,
+.activity-wandern .detail-image > img {
   height: auto;
 }
 .detail-image > img {
